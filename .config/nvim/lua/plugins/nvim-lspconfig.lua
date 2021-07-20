@@ -79,6 +79,7 @@ lspconfig.vimls.setup {
 
 -- BashLs
 lspconfig.bashls.setup {
+  root_dir = lspconfig.util.root_pattern(".git"),
   on_attach = common_attach,
   capabilities = capabilities
 }
