@@ -103,9 +103,10 @@ lspconfig.tsserver.setup {
 }
 
 -- Sumneko_lua
+local HOME = vim.fn.expand("$HOME")
 local sumneko_binary =
-  "/home/shen/lua-language-server/bin/Linux/lua-language-server"
-local sumneko_root_path = "/home/shen/lua-language-server"
+  HOME .. "/lua-language-server/bin/Linux/lua-language-server"
+local sumneko_root_path = HOME .. "/lua-language-server"
 
 lspconfig.sumneko_lua.setup {
   cmd = {sumneko_binary, "-E", sumneko_root_path .. "/main.lua"},
@@ -122,7 +123,8 @@ lspconfig.sumneko_lua.setup {
         library = {
           [vim.fn.expand("$VIMRUNTIME/lua")] = true,
           [vim.fn.expand("$VIMRUNTIME/lua/vim/lsp")] = true
-        }
+        },
+        preloadFileSize = 500
       }
     }
   },
