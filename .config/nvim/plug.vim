@@ -20,6 +20,7 @@ Plug 'folke/tokyonight.nvim'
 Plug 'kyazdani42/nvim-web-devicons'
 Plug 'kyazdani42/nvim-tree.lua'
 Plug 'lukas-reineke/indent-blankline.nvim'
+Plug 'ryanoasis/vim-devicons'
 
 " TS Utils
 Plug 'jose-elias-alvarez/nvim-lsp-ts-utils'
@@ -50,8 +51,5 @@ Plug 'nvim-telescope/telescope.nvim'
 
 " Startify
 Plug 'mhinz/vim-startify'
-
-" Spelunker
-Plug 'kamykn/spelunker.vim'
 
 call plug#end()

@@ -5,7 +5,7 @@ return function(client)
   ts_utils.setup {
     disable_commands = false,
     debug = false,
-    enable_import_on_completion = false,
+    enable_import_on_completion = true,
     import_on_completion_timeout = 5000,
     -- eslint
     eslint_enable_code_actions = true,

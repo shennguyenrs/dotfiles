@@ -29,13 +29,9 @@ require "compe".setup {
     vsnip = true,
     nvim_lsp = true,
     spell = true,
-    tags = true,
-    ultisnips = true
+    tags = true
   }
 }
-
--- Mapping
-vim.cmd [[ inoremap <silent><expr> <CR>compe#confirm('<CR>') ]]
 
 -- Tab completion
 local t = function(str)

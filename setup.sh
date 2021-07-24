@@ -6,7 +6,9 @@ git submodule update
 
 # Directories to installed on machine
 directories = (
+
 	.config
+
 )
 
 # Run Stow command with $HOME and directories
@@ -27,3 +29,4 @@ done
 
 echo ""
 echo "### ALL DONE ###"
+

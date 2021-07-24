@@ -18,20 +18,20 @@ alias gpl='git pull'
 
 # NPM
 alias ngi='sudo npm --global install'
+alias ngu='sudo npm --global uninstall'
+alias ngl='npm --global list'
+alias ngu='sudo npm --global update'
 alias ni='npm install'
 alias ns='npm start'
-alias ngu='sudo npm --global uninstall'
 alias nu='npm uninstall'
-alias ngl='npm --global list'
-alias nl='npm list'
-alias nt='npm test'
 alias nr='npm run'
+alias nt='npm test'
 
 # Pip3
 alias pi='pip3 install'
-alias piu='pip3 install --upgrade'
 alias pu='pip3 uninstall'
 alias plo='pip3 list --outdated'
+alias pug='pip3 list --outdated --format=freeze | grep -v "^\-e" | cut -d = -f 1 | xargs -n1 pip3 install -U'
 
 # Exa
 alias l="exa --long --all"
@@ -39,4 +39,4 @@ alias lt="exa --long --tree"
 
 # Suffixes
 alias -s {mp4,MP4,mov,MOV,mkv,MKV}='mpv'
-alias -s {py,js,html,css,jsx,txt,md,json,c,cpp,h,sh,go,hpp,php,java,ts,tsx,yaml,scss,sass,vim,lua}='nvim'
+alias -s {py,js,jsx,html,css,txt,md,json,c,cpp,h,sh,go,hpp,php,java,ts,tsx,yaml,scss,sass,vim,lua}='nvim'

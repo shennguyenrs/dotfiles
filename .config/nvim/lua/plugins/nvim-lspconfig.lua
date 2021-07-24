@@ -23,7 +23,7 @@ local common_attach = function(client, bufnr)
   require "lsp_signature".on_attach()
 
   -- See `:help vim.lsp.*` for documentation on any of the below functions
-  buf_set_keymap("n", "gD", "<Cmd>lua vim.lsp.buf.declaration()<CR>", opts)
+  --buf_set_keymap("n", "gD", "<Cmd>lua vim.lsp.buf.declaration()<CR>", opts)
   buf_set_keymap("n", "gd", "<Cmd>lua vim.lsp.buf.definition()<CR>", opts)
   buf_set_keymap("n", "K", "<Cmd>lua vim.lsp.buf.hover()<CR>", opts)
   --buf_set_keymap("n", "gi", "<cmd>lua vim.lsp.buf.implementation()<CR>", opts)
@@ -33,10 +33,30 @@ local common_attach = function(client, bufnr)
     "<cmd>lua vim.lsp.buf.signature_help()<CR>",
     opts
   )
-  --buf_set_keymap("n", "<space>wa", "<cmd>lua vim.lsp.buf.add_workspace_folder()<CR>", opts)
-  --buf_set_keymap("n", "<space>wr", "<cmd>lua vim.lsp.buf.remove_workspace_folder()<CR>", opts)
-  --buf_set_keymap("n", "<space>wl", "<cmd>lua print(vim.inspect(vim.lsp.buf.list_workspace_folders()))<CR>", opts)
-  --buf_set_keymap("n", "<space>D", "<cmd>lua vim.lsp.buf.type_definition()<CR>", opts)
+  --[[buf_set_keymap(
+    "n",
+    "<space>wa",
+    "<cmd>lua vim.lsp.buf.add_workspace_folder()<CR>",
+    opts
+  )
+  buf_set_keymap(
+    "n",
+    "<space>wr",
+    "<cmd>lua vim.lsp.buf.remove_workspace_folder()<CR>",
+    opts
+  )
+  buf_set_keymap(
+    "n",
+    "<space>wl",
+    "<cmd>lua print(vim.inspect(vim.lsp.buf.list_workspace_folders()))<CR>",
+    opts
+  )]]
+  buf_set_keymap(
+    "n",
+    "<space>D",
+    "<cmd>lua vim.lsp.buf.type_definition()<CR>",
+    opts
+  )
   buf_set_keymap("n", "<space>rn", "<cmd>lua vim.lsp.buf.rename()<CR>", opts)
   buf_set_keymap(
     "n",
@@ -44,11 +64,21 @@ local common_attach = function(client, bufnr)
     "<cmd>lua vim.lsp.buf.code_action()<CR>",
     opts
   )
-  --buf_set_keymap("n", "gr", "<cmd>lua vim.lsp.buf.references()<CR>", opts)
-  --buf_set_keymap("n", "<space>e", "<cmd>lua vim.lsp.diagnostic.show_line_diagnostics()<CR>", opts)
+  buf_set_keymap("n", "gr", "<cmd>lua vim.lsp.buf.references()<CR>", opts)
+  buf_set_keymap(
+    "n",
+    "<space>e",
+    "<cmd>lua vim.lsp.diagnostic.show_line_diagnostics()<CR>",
+    opts
+  )
   buf_set_keymap("n", "[d", "<cmd>lua vim.lsp.diagnostic.goto_prev()<CR>", opts)
   buf_set_keymap("n", "]d", "<cmd>lua vim.lsp.diagnostic.goto_next()<CR>", opts)
-  --buf_set_keymap("n", "<space>q", "<cmd>lua vim.lsp.diagnostic.set_loclist()<CR>", opts)
+  buf_set_keymap(
+    "n",
+    "<space>q",
+    "<cmd>lua vim.lsp.diagnostic.set_loclist()<CR>",
+    opts
+  )
   --buf_set_keymap("n", "<space>f", "<cmd>lua vim.lsp.buf.formatting()<CR>", opts)
 end
 
@@ -79,7 +109,6 @@ lspconfig.vimls.setup {
 
 -- BashLs
 lspconfig.bashls.setup {
-  root_dir = lspconfig.util.root_pattern(".git"),
   on_attach = common_attach,
   capabilities = capabilities
 }
@@ -134,12 +163,20 @@ lspconfig.sumneko_lua.setup {
 }
 
 -- EFM
+-- Check ctags file is exist and update tags
+local update_ctags = function(client)
+  vim.api.nvim_set_current_dir(client.config.root_dir)
+  local file = io.open(".ctags", "r")
+  if file ~= nil then
+    io.close(file)
+    vim.fn.systemlist("ctags -R")
+  end
+end
+
 local prettier = require "efm/prettier"
 local luafmt = require "efm/luafmt"
-local shfmt = require "efm/shfmt"
 
 local languages = {
-  sh = {shfmt},
   lua = {luafmt},
   javascript = {prettier},
   javascriptreact = {prettier},
@@ -169,13 +206,17 @@ lspconfig.efm.setup {
     completion = false
   },
   settings = {languages = languages},
-  on_attach = function(client, bufnr)
+  on_attach = function(client)
+    -- Disable unneeded capabilities
+    client.resolved_capabilities.document_formatting = true
+
     -- Format on save
     vim.api.nvim_command [[augroup FormatOnSave]]
     vim.api.nvim_command [[autocmd! * <buffer>]]
     vim.api.nvim_command [[autocmd BufWritePre <buffer> lua vim.lsp.buf.formatting_seq_sync()]]
     vim.api.nvim_command [[augroup END]]
 
-    common_attach(client, bufnr)
+    -- Update ctags
+    update_ctags(client)
   end
 }
