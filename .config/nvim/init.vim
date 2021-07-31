@@ -29,6 +29,8 @@ set shiftwidth=2
 
 set shortmess+=c
 
+set noswapfile
+
 " Theme
 set t_Co=256
 set background=dark
@@ -54,13 +56,13 @@ nmap <A-l> <C-w>l
 " Run plugins config
 exec 'luafile' expand(g:lua_path . "/plugins/lualine.lua")
 exec 'luafile' expand(g:lua_path . "/plugins/emmet.lua")
-exec 'luafile' expand(g:lua_path . "/plugins/nvim-tree.lua")
 exec 'luafile' expand(g:lua_path . "/plugins/nvim-web-devicons.lua")
 exec 'luafile' expand(g:lua_path . "/plugins/telescope.lua")
 exec 'luafile' expand(g:lua_path . "/plugins/treesitter.lua")
 exec 'luafile' expand(g:lua_path . "/plugins/which-key.lua")
 exec 'luafile' expand(g:lua_path . "/plugins/trouble.lua")
 exec 'luafile' expand(g:lua_path . "/plugins/vim-matchup.lua")
+exec 'luafile' expand(g:lua_path . "/plugins/ultisnips.lua")
 exec 'luafile' expand(g:lua_path . "/plugins/nvim-lspconfig.lua")
 exec 'luafile' expand(g:lua_path . "/plugins/compe.lua")
 

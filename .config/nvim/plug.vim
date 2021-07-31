@@ -12,13 +12,14 @@ Plug 'ray-x/lsp_signature.nvim'
 Plug 'hrsh7th/vim-vsnip'
 Plug 'hrsh7th/vim-vsnip-integ'
 Plug 'rafamadriz/friendly-snippets'
+Plug 'SirVer/ultisnips'
+Plug 'mlaursen/vim-react-snippets'
 
 " UI
 Plug 'dracula/vim', {'name': 'dracula'}
 Plug 'hoob3rt/lualine.nvim'
 Plug 'folke/tokyonight.nvim'
 Plug 'kyazdani42/nvim-web-devicons'
-Plug 'kyazdani42/nvim-tree.lua'
 Plug 'lukas-reineke/indent-blankline.nvim'
 Plug 'ryanoasis/vim-devicons'
 

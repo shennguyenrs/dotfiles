@@ -28,6 +28,7 @@ require "compe".setup {
     calc = true,
     vsnip = true,
     nvim_lsp = true,
+    ultisnips = true,
     spell = true,
     tags = true
   }
@@ -72,3 +73,8 @@ vim.api.nvim_set_keymap("i", "<Tab>", "v:lua.tab_complete()", {expr = true})
 vim.api.nvim_set_keymap("s", "<Tab>", "v:lua.tab_complete()", {expr = true})
 vim.api.nvim_set_keymap("i", "<S-Tab>", "v:lua.s_tab_complete()", {expr = true})
 vim.api.nvim_set_keymap("s", "<S-Tab>", "v:lua.s_tab_complete()", {expr = true})
+
+-- Mapping
+vim.api.nvim_command [[
+inoremap <silent><expr> <CR> compe#confirm('<CR>')
+]]
