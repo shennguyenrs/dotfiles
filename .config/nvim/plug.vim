@@ -14,6 +14,7 @@ Plug 'hrsh7th/vim-vsnip-integ'
 Plug 'rafamadriz/friendly-snippets'
 Plug 'SirVer/ultisnips'
 Plug 'mlaursen/vim-react-snippets'
+Plug 'honza/vim-snippets'
 
 " UI
 Plug 'dracula/vim', {'name': 'dracula'}
