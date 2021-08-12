@@ -26,6 +26,7 @@ zmodload zsh/complist
 compinit
 _comp_options+=(globdots)		# Include hidden files.
 
+
 # Vim mode
 bindkey -v
 export KEYTIMEOUT=1
@@ -60,14 +61,12 @@ zle -N zle-line-init
 echo -ne '\e[5 q' # Use beam shape cursor on startup.
 preexec() { echo -ne '\e[5 q' ;} # Use beam shape cursor for each new prompt.
 
-# Aliasrc
-[ -f "$HOME/.config/zsh/aliasrc" ] && source $HOME/.config/zsh/aliasrc
-
 # Plugins
-[ -f "$HOME/.cache/zsh_plugins/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh" ] && source $HOME/.cache/zsh_plugins/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh
-[ -f "$HOME/.cache/zsh_plugins/zsh-autosuggestions/zsh-autosuggestions.plugin.zsh" ] && source $HOME/.cache/zsh_plugins/zsh-autosuggestions/zsh-autosuggestions.plugin.zsh
-[ -f "$HOME/.cache/zsh_plugins/zsh-you-should-use/you-should-use.plugin.zsh" ] && source $HOME/.cache/zsh_plugins/zsh-you-should-use/you-should-use.plugin.zsh
-[ -f "$HOME/.cache/zsh_plugins/fzf-tab/fzf-tab.plugin.zsh" ] && source $HOME/.cache/zsh_plugins/fzf-tab/fzf-tab.plugin.zsh
+[ -f "$DOT/.config/zsh/zsh_plugins/fzf-tab/fzf-tab.plugin.zsh" ] && source $DOT/.config/zsh/zsh_plugins/fzf-tab/fzf-tab.plugin.zsh
+[ -f "$DOT/.config/zsh/zsh_plugins/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh" ] && source $DOT/.config/zsh/zsh_plugins/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh
+[ -f "$DOT/.config/zsh/zsh_plugins/zsh-autosuggestions/zsh-autosuggestions.plugin.zsh" ] && source $DOT/.config/zsh/zsh_plugins/zsh-autosuggestions/zsh-autosuggestions.plugin.zsh
+[ -f "$DOT/.config/zsh/zsh_plugins/zsh-you-should-use/you-should-use.plugin.zsh" ] && source $DOT/.config/zsh/zsh_plugins/zsh-you-should-use/you-should-use.plugin.zsh
 
-# Z lua
-eval "$(lua $HOME/.cache/zsh_plugins/z.lua/z.lua --init zsh)"
+# Aliasrc
+[ -f "$DOT/.config/zsh/aliasrc" ] && source $DOT/.config/zsh/aliasrc
+
