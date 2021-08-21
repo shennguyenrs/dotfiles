@@ -40,8 +40,8 @@ Plug 'mattn/emmet-vim'
 " Kommentary
 Plug 'b3nj5m1n/kommentary'
 
-" Vim CSS Color
-Plug 'ap/vim-css-color'
+" Nvim Colorizer
+Plug 'norcalli/nvim-colorizer.lua'
 
 " Vim Maximizer
 Plug 'szw/vim-maximizer'
@@ -53,5 +53,8 @@ Plug 'nvim-telescope/telescope.nvim'
 
 " Startify
 Plug 'mhinz/vim-startify'
+
+" Git Sign
+Plug 'lewis6991/gitsigns.nvim'
 
 call plug#end()

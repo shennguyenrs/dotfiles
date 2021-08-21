@@ -63,7 +63,9 @@ exec 'luafile' expand(g:lua_path . "/plugins/which-key.lua")
 exec 'luafile' expand(g:lua_path . "/plugins/trouble.lua")
 exec 'luafile' expand(g:lua_path . "/plugins/vim-matchup.lua")
 exec 'luafile' expand(g:lua_path . "/plugins/ultisnips.lua")
+exec 'luafile' expand(g:lua_path . "/plugins/gitsigns.lua")
 exec 'luafile' expand(g:lua_path . "/plugins/nvim-lspconfig.lua")
+exec 'luafile' expand(g:lua_path . "/plugins/nvim-colorizer.lua")
 exec 'luafile' expand(g:lua_path . "/plugins/compe.lua")
 
 " Create cache Eslint_d

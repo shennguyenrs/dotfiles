@@ -70,3 +70,7 @@ preexec() { echo -ne '\e[5 q' ;} # Use beam shape cursor for each new prompt.
 # Aliasrc
 [ -f "$DOT/.config/zsh/aliasrc" ] && source $DOT/.config/zsh/aliasrc
 
+
+# BEGIN_KITTY_SHELL_INTEGRATION
+if test -e "$HOME/kitty/shell-integration/kitty.zsh"; then source "$HOME/kitty/shell-integration/kitty.zsh"; fi
+# END_KITTY_SHELL_INTEGRATION
