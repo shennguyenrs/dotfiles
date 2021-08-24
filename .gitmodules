@@ -1,0 +1,119 @@
+[submodule "auto-pairs"]
+	path = .config/nvim/plugged/auto-pairs
+	url = https://github.com/jiangmiao/auto-pairs
+
+[submodule "emmet-vim"]
+	path = .config/nvim/plugged/emmet-vim
+	url = https://github.com/mattn/emmet-vim
+
+[submodule "friendly-snippets"]
+	path = .config/nvim/plugged/friendly-snippets
+	url = https://github.com/rafamadriz/friendly-snippets
+
+[submodule "gitsigns.nvim"]
+	path = .config/nvim/plugged/gitsigns.nvim
+	url = https://github.com/lewis6991/gitsigns.nvim
+
+[submodule "indent-blankline.nvim"]
+	path = .config/nvim/plugged/indent-blankline.nvim
+	url = https://github.com/lukas-reineke/indent-blankline.nvim
+
+[submodule "kommentary"]
+	path = .config/nvim/plugged/kommentary
+	url = https://github.com/b3nj5m1n/kommentary
+
+[submodule "lsp_signature.nvim"]
+	path = .config/nvim/plugged/lsp_signature.nvim
+	url = https://github.com/ray-x/lsp_signature.nvim
+
+[submodule "lualine.nvim"]
+	path = .config/nvim/plugged/lualine.nvim
+	url = https://github.com/hoob3rt/lualine.nvim
+
+[submodule "null-ls.nvim"]
+	path = .config/nvim/plugged/null-ls.nvim
+	url = https://github.com/jose-elias-alvarez/null-ls.nvim
+
+[submodule "nvim-colorizer.lua"]
+	path = .config/nvim/plugged/nvim-colorizer.lua
+	url = https://github.com/norcalli/nvim-colorizer.lua
+
+[submodule "nvim-compe"]
+	path = .config/nvim/plugged/nvim-compe
+	url = https://github.com/hrsh7th/nvim-compe
+
+[submodule "nvim-lsp-ts-utils"]
+	path = .config/nvim/plugged/nvim-lsp-ts-utils
+	url = https://github.com/jose-elias-alvarez/nvim-lsp-ts-utils
+
+[submodule "nvim-lspconfig"]
+	path = .config/nvim/plugged/nvim-lspconfig
+	url = https://github.com/neovim/nvim-lspconfig
+
+[submodule "nvim-treesitter"]
+	path = .config/nvim/plugged/nvim-treesitter
+	url = https://github.com/nvim-treesitter/nvim-treesitter
+
+[submodule "nvim-web-devicons"]
+	path = .config/nvim/plugged/nvim-web-devicons
+	url = https://github.com/kyazdani42/nvim-web-devicons
+
+[submodule "plenary.nvim"]
+	path = .config/nvim/plugged/plenary.nvim
+	url = https://github.com/nvim-lua/plenary.nvim
+
+[submodule "popup.nvim"]
+	path = .config/nvim/plugged/popup.nvim
+	url = https://github.com/nvim-lua/popup.nvim
+
+[submodule "telescope.nvim"]
+	path = .config/nvim/plugged/telescope.nvim
+	url = https://github.com/nvim-telescope/telescope.nvim
+
+[submodule "tokyonight.nvim"]
+	path = .config/nvim/plugged/tokyonight.nvim
+	url = https://github.com/folke/tokyonight.nvim
+
+[submodule "trouble.nvim"]
+	path = .config/nvim/plugged/trouble.nvim
+	url = https://github.com/folke/trouble.nvim
+
+[submodule "ultisnips"]
+	path = .config/nvim/plugged/ultisnips
+	url = https://github.com/SirVer/ultisnips
+
+[submodule "dracula"]
+	path = .config/nvim/plugged/vim
+	url = https://github.com/dracula/vim
+
+[submodule "vim-matchup"]
+	path = .config/nvim/plugged/vim-matchup
+	url = https://github.com/andymass/vim-matchup
+
+[submodule "vim-maximizer"]
+	path = .config/nvim/plugged/vim-maximizer
+	url = https://github.com/szw/vim-maximizer
+
+[submodule "vim-react-snippets"]
+	path = .config/nvim/plugged/vim-react-snippets
+	url = https://github.com/mlaursen/vim-react-snippets
+
+[submodule "vim-snippets"]
+	path = .config/nvim/plugged/vim-snippets
+	url = https://github.com/honza/vim-snippets
+
+[submodule "vim-startify"]
+	path = .config/nvim/plugged/vim-startify
+	url = https://github.com/mhinz/vim-startify
+
+[submodule "vim-vsnip"]
+	path = .config/nvim/plugged/vim-vsnip
+	url = https://github.com/hrsh7th/vim-vsnip
+
+[submodule "vim-vsnip-integ"]
+	path = .config/nvim/plugged/vim-vsnip-integ
+	url = https://github.com/hrsh7th/vim-vsnip-integ
+
+[submodule "which-key.nvim"]
+	path = .config/nvim/plugged/which-key.nvim
+	url = https://github.com/folke/which-key.nvim
