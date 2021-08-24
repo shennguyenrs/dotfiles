@@ -72,5 +72,5 @@ preexec() { echo -ne '\e[5 q' ;} # Use beam shape cursor for each new prompt.
 
 
 # BEGIN_KITTY_SHELL_INTEGRATION
-if test -e "$HOME/kitty/shell-integration/kitty.zsh"; then source "$HOME/kitty/shell-integration/kitty.zsh"; fi
+if test -e "$HOME/Application/kitty/shell-integration/kitty.zsh"; then source "$HOME/Application/kitty/shell-integration/kitty.zsh"; fi
 # END_KITTY_SHELL_INTEGRATION

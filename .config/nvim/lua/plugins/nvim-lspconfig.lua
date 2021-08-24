@@ -133,7 +133,7 @@ lspconfig.tsserver.setup {
 }
 
 -- Sumneko_lua
-local HOME = vim.fn.expand("$HOME")
+local HOME = vim.fn.expand("$HOME/Application")
 local sumneko_binary =
   HOME .. "/lua-language-server/bin/Linux/lua-language-server"
 local sumneko_root_path = HOME .. "/lua-language-server"

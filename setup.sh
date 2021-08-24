@@ -5,10 +5,8 @@ git submodule init
 git submodule update
 
 # Directories to installed on machine
-directories = (
-
+directories=(
 	.config
-
 )
 
 # Run Stow command with $HOME and directories
@@ -17,7 +15,7 @@ stowit() {
 	# -v verbose
 	# -R recursive
 	# -t target
-	stow -vRt $HOME ${dir}
+	stow -vRt $HOME/.config ${dir}
 }
 
 echo ""
