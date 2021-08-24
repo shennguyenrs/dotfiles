@@ -117,3 +117,23 @@
 [submodule "which-key.nvim"]
 	path = .config/nvim/plugged/which-key.nvim
 	url = https://github.com/folke/which-key.nvim
+
+[submodule "fast-syntax-highlighting"]
+	path = .config/zsh/zsh_plugins/fast-syntax-highlighting
+	url = https://github.com/zdharma/fast-syntax-highlighting
+
+[submodule "fzf-tab"]
+	path = .config/zsh/zsh_plugins/fzf-tab
+	url = https://github.com/Aloxaf/fzf-tab
+
+[submodule "zsh-autosuggestions"]
+	path = .config/zsh/zsh_plugins/zsh-autosuggestions
+	url = https://github.com/zsh-users/zsh-autosuggestions
+
+[submodule "zsh-ls-colors"]
+	path = .config/zsh/zsh_plugins/zsh-ls-colors
+	url = https://github.com/xPMo/zsh-ls-colors
+
+[submodule "zsh-you-should-use"]
+	path = .config/zsh/zsh_plugins/zsh-you-should-use
+	url = https://github.com/MichaelAquilina/zsh-you-should-use
