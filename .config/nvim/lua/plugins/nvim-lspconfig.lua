@@ -113,6 +113,12 @@ lspconfig.bashls.setup {
   capabilities = capabilities
 }
 
+-- PyRight
+lspconfig.pyright.setup {
+  on_attach = common_attach,
+  capabilities = capabilities
+}
+
 -- TsServer
 local ts_utils_attach = require "plugins/nvim-lsp-ts-utils"
 
@@ -133,7 +139,7 @@ lspconfig.tsserver.setup {
 }
 
 -- Sumneko_lua
-local HOME = vim.fn.expand("$HOME/Application")
+local HOME = vim.fn.expand("$HOME/Applications")
 local sumneko_binary =
   HOME .. "/lua-language-server/bin/Linux/lua-language-server"
 local sumneko_root_path = HOME .. "/lua-language-server"
@@ -175,6 +181,7 @@ end
 
 local prettier = require "efm/prettier"
 local luafmt = require "efm/luafmt"
+local yapf = require "efm/yapf"
 
 local languages = {
   lua = {luafmt},
@@ -187,7 +194,8 @@ local languages = {
   scss = {prettier},
   sass = {prettier},
   css = {prettier},
-  markdown = {prettier}
+  markdown = {prettier},
+  python = {yapf}
 }
 
 lspconfig.efm.setup {
@@ -195,7 +203,8 @@ lspconfig.efm.setup {
     "package.lock",
     "package-lock.json",
     ".git",
-    "init.vim"
+    "init.vim",
+    "__init__.py"
   ),
   filetypes = vim.tbl_keys(languages),
   init_options = {

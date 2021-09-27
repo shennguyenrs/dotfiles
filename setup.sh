@@ -19,7 +19,7 @@ stowit() {
 }
 
 echo ""
-echo "--> Stowing directories for user: ${whoiam}"
+echo "--> Stowing directories"
 
 for dir in ${directories[@]}; do
 	stowit $dir
