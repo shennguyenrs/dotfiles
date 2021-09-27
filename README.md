@@ -6,3 +6,4 @@ Settings including:
 - Kitty
 - Mpv
 - Zsh
+- Ranger
