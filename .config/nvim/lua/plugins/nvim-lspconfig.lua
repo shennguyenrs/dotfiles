@@ -175,7 +175,7 @@ local update_ctags = function(client)
   local file = io.open(".ctags", "r")
   if file ~= nil then
     io.close(file)
-    vim.fn.systemlist("ctags -R")
+    vim.fn.systemlist("ctags -R --exclude=@.ctagsignore")
   end
 end
 
