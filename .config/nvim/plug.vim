@@ -56,4 +56,7 @@ Plug 'mhinz/vim-startify'
 " Git Sign
 Plug 'lewis6991/gitsigns.nvim'
 
+" Markdown preview
+Plug 'ellisonleao/glow.nvim'
+
 call plug#end()

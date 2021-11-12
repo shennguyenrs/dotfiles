@@ -1,6 +1,6 @@
 local lspconfig = require("lspconfig")
 
-require "null-ls".setup {}
+require("null-ls").config {}
 
 -- Use an on_attach function to only map the following keys
 -- after the language server attaches to the current buffer
@@ -117,6 +117,23 @@ lspconfig.bashls.setup {
 lspconfig.pyright.setup {
   on_attach = common_attach,
   capabilities = capabilities
+}
+
+-- CssLs
+lspconfig.cssls.setup {
+  on_attach = common_attach,
+  capabilities = capabilities
+}
+
+--Html
+lspconfig.html.setup {
+  on_attach = common_attach,
+  capabilities = capabilities
+}
+
+--Null-ls
+require("lspconfig")["null-ls"].setup {
+  root_dir = lspconfig.util.root_pattern("package.json", "package-lock.json")
 }
 
 -- TsServer

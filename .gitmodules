@@ -148,6 +148,11 @@
 	url = https://github.com/folke/which-key.nvim
 	branch = master
 
+[submodule "glow.nvim"]
+	path = .config/nvim/plugged/glow.nvim
+	url = https://github.com/ellisonleao/glow.nvim
+	branch = master
+
 [submodule "fast-syntax-highlighting"]
 	path = .config/zsh/zsh_plugins/fast-syntax-highlighting
 	url = https://github.com/zdharma/fast-syntax-highlighting

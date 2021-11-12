@@ -1,20 +1,5 @@
-# Debian
-alias aud='sudo apt update'
-alias aug='sudo apt upgrade'
-alias ai='sudo apt install'
-
 # Neovim
 alias vi='nvim'
-
-# Git
-alias gs='git status'
-alias ga='git add'
-alias gr='git rm'
-alias gc='git commit'
-alias gcl='git clone'
-alias gch='git checkout'
-alias gps='git push'
-alias gpl='git pull'
 
 # NPM
 alias ngi='sudo npm --global install'
