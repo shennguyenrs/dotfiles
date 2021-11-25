@@ -36,8 +36,8 @@ Plug 'folke/which-key.nvim'
 " Emmet
 Plug 'mattn/emmet-vim'
 
-" Kommentary
-Plug 'b3nj5m1n/kommentary'
+" Comment.nvim
+Plug 'numToStr/Comment.nvim'
 
 " Nvim Colorizer
 Plug 'norcalli/nvim-colorizer.lua'

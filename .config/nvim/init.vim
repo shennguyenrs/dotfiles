@@ -67,6 +67,8 @@ exec 'luafile' expand(g:lua_path . "/plugins/gitsigns.lua")
 exec 'luafile' expand(g:lua_path . "/plugins/nvim-lspconfig.lua")
 exec 'luafile' expand(g:lua_path . "/plugins/nvim-colorizer.lua")
 exec 'luafile' expand(g:lua_path . "/plugins/compe.lua")
+exec 'luafile' expand(g:lua_path . "/plugins/comment-nvim.lua")
+
 
 " Create cache Eslint_d
 augroup EslintCache

@@ -23,11 +23,6 @@
 	url = https://github.com/lukas-reineke/indent-blankline.nvim
 	branch = master
 
-[submodule "kommentary"]
-	path = .config/nvim/plugged/kommentary
-	url = https://github.com/b3nj5m1n/kommentary
-	branch = master
-
 [submodule "lsp_signature.nvim"]
 	path = .config/nvim/plugged/lsp_signature.nvim
 	url = https://github.com/ray-x/lsp_signature.nvim
@@ -151,6 +146,11 @@
 [submodule "glow.nvim"]
 	path = .config/nvim/plugged/glow.nvim
 	url = https://github.com/ellisonleao/glow.nvim
+	branch = master
+
+[submodule "Comment.nvim"]
+	path = .config/nvim/plugged/Comment.nvim
+	url = https://github.com/numToStr/Comment.nvim
 	branch = master
 
 [submodule "fast-syntax-highlighting"]
