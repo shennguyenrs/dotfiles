@@ -1,0 +1,14 @@
+format = """
+$directory\
+\n\
+$character
+"""
+
+right_format = """
+$git_branch\
+$git_commit\
+$git_state\
+$git_metrics\
+$git_status\
+$cmd_duration\
+"""

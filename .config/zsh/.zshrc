@@ -1,7 +1,9 @@
 # Set up the prompt
-autoload -Uz promptinit
-promptinit
-prompt pure
+eval "$(starship init zsh)"
+
+# autoload -Uz promptinit
+# promptinit
+# prompt starship
 
 # History in cache directory
 HISTFILE=$HOME/.cache/.zsh_history
@@ -25,7 +27,6 @@ zstyle ':completion:*' matcher-list '' 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=*' 
 zmodload zsh/complist
 compinit
 _comp_options+=(globdots)		# Include hidden files.
-
 
 # Vim mode
 bindkey -v
@@ -69,7 +70,6 @@ preexec() { echo -ne '\e[5 q' ;} # Use beam shape cursor for each new prompt.
 
 # Aliasrc
 [ -f "$DOT/.config/zsh/aliasrc" ] && source $DOT/.config/zsh/aliasrc
-
 
 # BEGIN_KITTY_SHELL_INTEGRATION
 if test -e "$HOME/Application/kitty/shell-integration/kitty.zsh"; then source "$HOME/Application/kitty/shell-integration/kitty.zsh"; fi
