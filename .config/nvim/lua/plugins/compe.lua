@@ -29,8 +29,7 @@ require "compe".setup {
     vsnip = true,
     nvim_lsp = true,
     ultisnips = true,
-    spell = true,
-    tags = true
+    spell = true
   }
 }
 

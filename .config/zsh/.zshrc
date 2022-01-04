@@ -1,10 +1,6 @@
 # Set up the prompt
 eval "$(starship init zsh)"
 
-# autoload -Uz promptinit
-# promptinit
-# prompt starship
-
 # History in cache directory
 HISTFILE=$HOME/.cache/.zsh_history
 HISTSIZE=10000
@@ -30,7 +26,7 @@ _comp_options+=(globdots)		# Include hidden files.
 
 # Vim mode
 bindkey -v
-export KEYTIMEOUT=1
+# export KEYTIMEOUT=1
 
 # Use vim keys in tab complete menu
 bindkey -M menuselect 'h' vi-backward-char

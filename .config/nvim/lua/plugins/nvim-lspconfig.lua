@@ -186,16 +186,6 @@ lspconfig.sumneko_lua.setup {
 }
 
 -- EFM
--- Check ctags file is exist and update tags
-local update_ctags = function(client)
-  vim.api.nvim_set_current_dir(client.config.root_dir)
-  local file = io.open(".ctags", "r")
-  if file ~= nil then
-    io.close(file)
-    vim.fn.systemlist("ctags -R --exclude=@.ctagsignore")
-  end
-end
-
 local prettier = require "efm/prettier"
 local luafmt = require "efm/luafmt"
 local yapf = require "efm/yapf"
@@ -241,8 +231,5 @@ lspconfig.efm.setup {
     vim.api.nvim_command [[autocmd! * <buffer>]]
     vim.api.nvim_command [[autocmd BufWritePre <buffer> lua vim.lsp.buf.formatting_seq_sync()]]
     vim.api.nvim_command [[augroup END]]
-
-    -- Update ctags
-    update_ctags(client)
   end
 }

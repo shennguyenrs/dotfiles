@@ -16,7 +16,7 @@ alias nt='npm test'
 alias pi='pip3 install'
 alias pu='pip3 uninstall'
 alias plo='pip3 list --outdated'
-alias pug='pip3 list --outdated --format=freeze | grep -v "^\-e" | cut -d = -f 1 | xargs -n1 pip3 install -U'
+alias pug='sudo pip3 list --outdated --format=freeze | grep -v "^\-e" | cut -d = -f 1 | xargs -n1 sudo pip3 install --upgrade'
 
 # Exa
 alias l="exa --long --all"

@@ -27,7 +27,7 @@ Plug 'lukas-reineke/indent-blankline.nvim'
 Plug 'jose-elias-alvarez/nvim-lsp-ts-utils'
 Plug 'jose-elias-alvarez/null-ls.nvim'
 
-"Trouble
+" Trouble
 Plug 'folke/trouble.nvim'
 
 " Which Key
@@ -58,5 +58,8 @@ Plug 'lewis6991/gitsigns.nvim'
 
 " Markdown preview
 Plug 'ellisonleao/glow.nvim'
+
+" Diffview
+Plug 'sindrets/diffview.nvim'
 
 call plug#end()
