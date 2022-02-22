@@ -1,7 +1,5 @@
 local lspconfig = require("lspconfig")
 
-require("null-ls").config {}
-
 -- Use an on_attach function to only map the following keys
 -- after the language server attaches to the current buffer
 local common_attach = function(client, bufnr)
@@ -131,14 +129,19 @@ lspconfig.html.setup {
   capabilities = capabilities
 }
 
---Null-ls
-require("lspconfig")["null-ls"].setup {
-  root_dir = lspconfig.util.root_pattern("package.json", "package-lock.json")
+-- Tailwind CSS
+lspconfig.tailwindcss.setup {
+  on_attach = common_attach,
+  capabilities = capabilities
+}
+
+-- Eslint
+lspconfig.eslint.setup {
+  on_attach = common_attach,
+  capabilities = capabilities
 }
 
 -- TsServer
-local ts_utils_attach = require "plugins/nvim-lsp-ts-utils"
-
 lspconfig.tsserver.setup {
   root_dir = lspconfig.util.root_pattern(
     "package.json",
@@ -148,7 +151,6 @@ lspconfig.tsserver.setup {
   on_attach = function(client, bufnr)
     -- Disable formating capability
     client.resolved_capabilities.document_formatting = false
-    ts_utils_attach(client)
     common_attach(client, bufnr)
   end,
   capabilities = capabilities,
@@ -183,6 +185,25 @@ lspconfig.sumneko_lua.setup {
   },
   on_attach = common_attach,
   capabilities = capabilities
+}
+
+-- Golang
+lspconfig.gopls.setup {
+  on_attach = common_attach,
+  capabilities = capabilities
+}
+
+-- Rust
+lspconfig.rls.setup {
+  on_attach = common_attach,
+  capabilities = capabilities,
+  settings = {
+    rust = {
+      unstable_features = true,
+      build_on_save = false,
+      all_features = true
+    }
+  }
 }
 
 -- EFM
