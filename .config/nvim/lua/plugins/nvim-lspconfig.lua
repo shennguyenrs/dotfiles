@@ -129,12 +129,6 @@ lspconfig.html.setup {
   capabilities = capabilities
 }
 
--- Tailwind CSS
-lspconfig.tailwindcss.setup {
-  on_attach = common_attach,
-  capabilities = capabilities
-}
-
 -- Eslint
 lspconfig.eslint.setup {
   on_attach = common_attach,
