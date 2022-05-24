@@ -7,6 +7,7 @@ Plug 'andymass/vim-matchup'
 Plug 'neovim/nvim-lspconfig'
 Plug 'hrsh7th/nvim-compe'
 Plug 'ray-x/lsp_signature.nvim'
+Plug 'AndrewRadev/tagalong.vim'
 
 " Snippet
 Plug 'hrsh7th/vim-vsnip'
@@ -57,5 +58,8 @@ Plug 'ellisonleao/glow.nvim'
 
 " Diffview
 Plug 'sindrets/diffview.nvim'
+
+" Github Copilot
+Plug 'github/copilot.vim'
 
 call plug#end()

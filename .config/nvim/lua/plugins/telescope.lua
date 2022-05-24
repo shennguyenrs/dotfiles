@@ -30,7 +30,12 @@ require("telescope").setup {
       ".git/",
       "%.png",
       "%.ico",
-      "%.jpeg"
+      "%.jpeg",
+      "%.jpg",
+      "%.db",
+      "build/*",
+      "public/*",
+      ".cache/*"
     },
     generic_sorter = require "telescope.sorters".get_generic_fuzzy_sorter,
     winblend = 0,
@@ -45,6 +50,11 @@ require("telescope").setup {
     qflist_previewer = require "telescope.previewers".vim_buffer_qflist.new,
     -- Developer configurations: Not meant for general override
     buffer_previewer_maker = require "telescope.previewers".buffer_previewer_maker
+  },
+  pickers = {
+    find_files = {
+      hidden = true
+    }
   }
 }
 

@@ -117,6 +117,12 @@ lspconfig.pyright.setup {
   capabilities = capabilities
 }
 
+-- Tailwind CSS
+lspconfig.tailwindcss.setup {
+  on_attach = common_attach,
+  capabilities = capabilities
+}
+
 -- CssLs
 lspconfig.cssls.setup {
   on_attach = common_attach,
@@ -185,6 +191,22 @@ lspconfig.sumneko_lua.setup {
 lspconfig.gopls.setup {
   on_attach = common_attach,
   capabilities = capabilities
+}
+
+-- Yaml
+lspconfig.yamlls.setup {
+  on_attach = common_attach,
+  capabilities = capabilities,
+  settings = {
+    yaml = {
+      trace = {
+        server = "verbose"
+      },
+      schemas = {
+        kubernetes = "https://raw.githubusercontent.com/kubernetes/kubernetes/master/api/openapi-spec/swagger.json"
+      }
+    }
+  }
 }
 
 -- Rust
