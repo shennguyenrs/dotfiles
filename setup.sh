@@ -29,6 +29,9 @@ for dir in ${directories[@]}; do
 	stowit $dir
 done
 
+echo "---> Stowing git global config"
+stow -vRt $HOME git
+
 echo ""
 echo "### ALL DONE ###"
 

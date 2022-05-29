@@ -1,0 +1,11 @@
+[user]
+	email = shennguyen.redshinobi96@gmail.com
+	name = shennguyen
+[alias]
+	co = checkout
+	br = branch
+	st = status
+	cm = commit -m
+	a = add
+	ps = push
+	pl = pull
