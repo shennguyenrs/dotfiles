@@ -23,6 +23,7 @@ Plug 'hoob3rt/lualine.nvim'
 Plug 'folke/tokyonight.nvim'
 Plug 'kyazdani42/nvim-web-devicons'
 Plug 'lukas-reineke/indent-blankline.nvim'
+Plug 'karb94/neoscroll.nvim'
 
 " Trouble
 Plug 'folke/trouble.nvim'

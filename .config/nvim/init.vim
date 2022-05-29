@@ -68,8 +68,8 @@ exec 'luafile' expand(g:lua_path . "/plugins/nvim-lspconfig.lua")
 exec 'luafile' expand(g:lua_path . "/plugins/nvim-colorizer.lua")
 exec 'luafile' expand(g:lua_path . "/plugins/compe.lua")
 exec 'luafile' expand(g:lua_path . "/plugins/comment-nvim.lua")
-exec 'luafile' expand(g:lua_path . "/plugins/diffview.lua")
-
+exec 'luafile' expand(g:lua_path . "/plugins/comment-nvim.lua")
+exec 'luafile' expand(g:lua_path . "/plugins/neoscroll.lua")
 
 " Create cache Eslint_d
 augroup EslintCache

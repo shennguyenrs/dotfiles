@@ -158,6 +158,11 @@
 	url = https://github.com/sindrets/diffview.nvim
 	branch = master
 
+[submodule "Neoscroll.nvim"]
+	path = .config/nvim/plugged/neoscroll.nvim
+	url = https://github.com/karb94/neoscroll.nvim
+	branch = master
+
 [submodule "fast-syntax-highlighting"]
 	path = .config/zsh/zsh_plugins/fast-syntax-highlighting
 	url = https://github.com/zdharma/fast-syntax-highlighting
