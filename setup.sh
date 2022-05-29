@@ -9,28 +9,30 @@ sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.
        https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
 
 # Directories to installed on machine
-directories=(
-	.config
-)
+config=( .config )
+global=( git tmux )
 
-# Run Stow command with $HOME and directories
+# Run Stow command with location and directories
 stowit() {
-	dir=$1
+	loc=$1
+	dir=$2
 	# -v verbose
 	# -R recursive
 	# -t target
-	stow -vRt $HOME/.config ${dir}
+	stow -vRt ${loc} ${dir}
 }
 
 echo ""
-echo "--> Stowing directories"
+echo "--> Stowing .config directories"
 
-for dir in ${directories[@]}; do
-	stowit $dir
+for dir in ${config[@]}; do
+	stowit $HOME/.config $dir
 done
 
-echo "---> Stowing git global config"
-stow -vRt $HOME git
+echo "---> Stowing global config"
+for dir in ${global[@]}; do
+	stowit $HOME $dir
+done
 
 echo ""
 echo "### ALL DONE ###"
