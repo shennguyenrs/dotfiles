@@ -1,3 +1,8 @@
+#! /usr/bin/bash
+
+# Setup TTY theme
+source $DOT/themes/dracula-tty
+
 # Set up the prompt
 eval "$(starship init zsh)"
 
