@@ -1,11 +1,14 @@
+[init]
+	defaultBranch = master
 [user]
 	email = shennguyen.redshinobi96@gmail.com
-	name = shennguyen
+	name = Shen Nguyen
 [alias]
-	co = checkout
-	br = branch
-	st = status
-	cm = commit -m
-	a = add
 	ps = push
 	pl = pull
+	cm = commit -m
+	st = status
+	a = add
+	b = branch
+	co = checkout
+	cob = checkout -b
