@@ -63,4 +63,8 @@ Plug 'sindrets/diffview.nvim'
 " Github Copilot
 Plug 'github/copilot.vim'
 
+" Golang
+Plug 'ray-x/go.nvim'
+Plug 'ray-x/guihua.lua'
+
 call plug#end()

@@ -70,6 +70,7 @@ exec 'luafile' expand(g:lua_path . "/plugins/compe.lua")
 exec 'luafile' expand(g:lua_path . "/plugins/comment-nvim.lua")
 exec 'luafile' expand(g:lua_path . "/plugins/comment-nvim.lua")
 exec 'luafile' expand(g:lua_path . "/plugins/neoscroll.lua")
+exec 'luafile' expand(g:lua_path . "/plugins/go-nvim.lua")
 
 " Create cache Eslint_d
 augroup EslintCache
@@ -81,3 +82,7 @@ augroup END
 
 " Escape terminal in Neovim
 tnoremap <Esc> <C-\><C-n>
+
+"Run gofmt on save
+autocmd BufWritePre *.go :silent! lua require('go.format').gofmt()
+
