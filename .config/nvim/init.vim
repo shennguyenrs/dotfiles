@@ -82,7 +82,3 @@ augroup END
 
 " Escape terminal in Neovim
 tnoremap <Esc> <C-\><C-n>
-
-"Run gofmt on save
-autocmd BufWritePre *.go :silent! lua require('go.format').gofmt()
-

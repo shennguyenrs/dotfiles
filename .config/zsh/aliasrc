@@ -19,8 +19,8 @@ alias plo='pip3 list --outdated'
 alias pug='sudo pip3 list --outdated --format=freeze | grep -v "^\-e" | cut -d = -f 1 | xargs -n1 sudo pip3 install --upgrade'
 
 # Exa
-alias l="exa --long --all"
-alias lt="exa --long --tree"
+alias l="exa --long --all --header --icons"
+alias lt="exa --long --tree --header --icons"
 
 # Suffixes
 alias -s {mp4,MP4,mov,MOV,mkv,MKV}='mpv'
