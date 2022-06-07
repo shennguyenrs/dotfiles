@@ -1,7 +1,5 @@
 # Set up the prompt
 eval "$(starship init zsh)"
-# autoload -U promptinit; promptinit
-# prompt pure
 
 # History in cache directory
 HISTFILE=$HOME/.cache/.zsh_history
