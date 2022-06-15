@@ -163,6 +163,26 @@
 	url = https://github.com/karb94/neoscroll.nvim
 	branch = master
 
+[submodule "copilot.nvim"]
+	path = .config/nvim/plugged/copilot.vim
+	url = https://github.com/github/copilot.vim
+	branch = master
+	
+[submodule "go.nvim"]
+	path = .config/nvim/plugged/go.nvim
+	url = https://github.com/ray-x/go.nvim
+	branch = master
+
+[submodule "guihua.lua"]
+	path = .config/nvim/plugged/guihua.lua
+	url = https://github.com/ray-x/guihua.lua
+	branch = master
+
+[submodule "tagalong.vim"]
+	path = .config/nvim/plugged/tagalong.vim
+	url = https://github.com/AndrewRadev/tagalong.vim
+	branch = master
+
 [submodule "fast-syntax-highlighting"]
 	path = .config/zsh/zsh_plugins/fast-syntax-highlighting
 	url = https://github.com/zdharma/fast-syntax-highlighting
