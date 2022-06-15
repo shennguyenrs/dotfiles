@@ -25,3 +25,6 @@ alias lt="exa --long --tree --header --icons"
 # Suffixes
 alias -s {mp4,MP4,mov,MOV,mkv,MKV}='mpv'
 alias -s {py,js,jsx,html,css,txt,md,json,c,cpp,h,sh,go,hpp,php,java,ts,tsx,yaml,scss,sass,vim,lua}='nvim'
+
+# Others
+alias wttr='curl wttr.in'

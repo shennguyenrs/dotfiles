@@ -118,10 +118,7 @@ lspconfig.pyright.setup {
 }
 
 -- Tailwind CSS
-lspconfig.tailwindcss.setup {
-  on_attach = common_attach,
-  capabilities = capabilities
-}
+lspconfig.tailwindcss.setup {}
 
 -- CssLs
 lspconfig.cssls.setup {
