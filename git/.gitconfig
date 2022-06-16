@@ -4,11 +4,12 @@
 	email = shennguyen.redshinobi96@gmail.com
 	name = Shen Nguyen
 [alias]
-	ps = push
-	pl = pull
-	cm = commit -m
-	st = status
 	a = add
 	b = branch
 	co = checkout
 	cob = checkout -b
+	cm = commit -m
+	cl = clone
+	ps = push
+	pl = pull
+	st = status
