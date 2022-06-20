@@ -71,6 +71,7 @@ exec 'luafile' expand(g:lua_path . "/plugins/comment-nvim.lua")
 exec 'luafile' expand(g:lua_path . "/plugins/comment-nvim.lua")
 exec 'luafile' expand(g:lua_path . "/plugins/neoscroll.lua")
 exec 'luafile' expand(g:lua_path . "/plugins/go-nvim.lua")
+exec 'luafile' expand(g:lua_path . "/plugins/todo-comments-nvim.lua")
 
 " Create cache Eslint_d
 augroup EslintCache

@@ -67,4 +67,7 @@ Plug 'github/copilot.vim'
 Plug 'ray-x/go.nvim'
 Plug 'ray-x/guihua.lua'
 
+" Todo comments
+Plug 'folke/todo-comments.nvim'
+
 call plug#end()
