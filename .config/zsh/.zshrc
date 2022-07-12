@@ -70,3 +70,6 @@ preexec() { echo -ne '\e[5 q' ;} # Use beam shape cursor for each new prompt.
 # BEGIN_KITTY_SHELL_INTEGRATION
 if test -e "$HOME/Application/kitty/shell-integration/kitty.zsh"; then source "$HOME/Application/kitty/shell-integration/kitty.zsh"; fi
 # END_KITTY_SHELL_INTEGRATION
+
+# bun completions
+[ -s "/home/shen/.bun/_bun" ] && source "/home/shen/.bun/_bun"
