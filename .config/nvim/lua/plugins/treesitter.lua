@@ -3,30 +3,27 @@ require "nvim-treesitter.configs".setup {
     enable = true,
     disable = {}
   },
-  indent = {
-    enable = false,
-    disable = {}
-  },
+  auto_install = true,
   ensure_installed = {
     "bash",
-    "c",
-    "cpp",
     "css",
-    "dockerfile",
+    "scss",
     "html",
-    "java",
     "javascript",
+    "typescript",
+    "tsx",
     "json",
     "lua",
-    "php",
     "python",
+    "go",
     "regex",
-    "scss",
-    "tsx",
-    "typescript",
-    "yaml"
+    "yaml",
+    "dockerfile",
+    "markdown",
+    "sql",
+    "vim"
   }
 }
 
-local parser_config = require "nvim-treesitter.parsers".get_parser_configs()
-parser_config.tsx.used_by = {"javascript", "typescript.tsx"}
+-- local parser_config = require "nvim-treesitter.parsers".get_parser_configs()
+-- parser_config.tsx.used_by = {"javascript", "typescript"}

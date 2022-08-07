@@ -163,11 +163,6 @@
 	url = https://github.com/karb94/neoscroll.nvim
 	branch = master
 
-[submodule "copilot.nvim"]
-	path = .config/nvim/plugged/copilot.vim
-	url = https://github.com/github/copilot.vim
-	branch = master
-	
 [submodule "go.nvim"]
 	path = .config/nvim/plugged/go.nvim
 	url = https://github.com/ray-x/go.nvim
