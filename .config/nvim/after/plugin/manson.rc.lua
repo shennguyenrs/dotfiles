@@ -16,6 +16,8 @@ lspconfig.setup {
 		"pyright",
 		"tailwindcss",
 		"yamlls",
-		"emmet_ls"
+		"emmet_ls",
+		"eslint_d",
+		"prettierd"
 	},
 }
