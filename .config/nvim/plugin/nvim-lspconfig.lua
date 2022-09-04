@@ -124,7 +124,8 @@ lspconfig.tsserver.setup {
 		"package-lock.json",
 		".git"
 	),
-	filetypes = { "typescript", "typescriptreact", "typescript.tsx" },
+	filetypes = { "javascript", "typescript", "javascriptreact"
+		, "typescriptreact" },
 	cmd = { "typescript-language-server", "--stdio" },
 	on_attach = function(client, bufnr)
 		-- Disable formating capability
