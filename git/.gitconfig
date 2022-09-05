@@ -13,3 +13,4 @@
 	ps = push
 	pl = pull
 	st = status
+	ft = fetch
