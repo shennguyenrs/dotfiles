@@ -7,10 +7,21 @@ alias ngu='sudo npm --global uninstall'
 alias ngl='npm --global list'
 alias ngu='sudo npm --global update'
 alias ni='npm install'
+alias nid='npm install --save-dev'
 alias ns='npm start'
 alias nu='npm uninstall'
 alias nr='npm run'
 alias nt='npm test'
+
+# PNPM
+alias pni='pnpm install'
+alias pna='pnpm add'
+alias pnad='pnpm add -D'
+alias pnpp='pnpm prune'
+alias pns='pnpm start'
+
+# Others
+alias wttr='curl wttr.in'
 
 # Pip3
 alias pi='pip3 install'
@@ -25,6 +36,3 @@ alias lt="exa --long --tree --header --icons"
 # Suffixes
 alias -s {mp4,MP4,mov,MOV,mkv,MKV}='mpv'
 alias -s {py,js,jsx,html,css,txt,md,json,c,cpp,h,sh,go,hpp,php,java,ts,tsx,yaml,scss,sass,vim,lua}='nvim'
-
-# Others
-alias wttr='curl wttr.in'
