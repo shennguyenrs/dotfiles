@@ -103,9 +103,16 @@ lspconfig.dockerls.setup {
 	capabilities = capabilities,
 }
 
+-- Emmet
 lspconfig.emmet_ls.setup({
 	capabilities = capabilities,
-	filetypes = { 'html', 'typescriptreact', 'javascriptreact' },
+	filetypes = { 'html', 'svelte', 'typescriptreact', 'javascriptreact' },
+})
+
+-- Svelte
+lspconfig.svelte.setup({
+	on_attach = common_attach,
+	capabilities = capabilities,
 })
 
 -- TsServer

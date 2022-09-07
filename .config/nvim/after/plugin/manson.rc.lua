@@ -14,6 +14,7 @@ lspconfig.setup {
 		"html",
 		"tsserver",
 		"pyright",
+		"svelte",
 		"tailwindcss",
 		"yamlls",
 		"emmet_ls",

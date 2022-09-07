@@ -19,6 +19,7 @@ alias pna='pnpm add'
 alias pnad='pnpm add -D'
 alias pnpp='pnpm prune'
 alias pns='pnpm start'
+alias pnr='pnpm run'
 
 # Others
 alias wttr='curl wttr.in'
