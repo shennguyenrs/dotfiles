@@ -1,8 +1,21 @@
-vim.g.tokyonight_style = "night"
-vim.g.tokyonight_dark_sidebar = true
+require("tokyonight").setup({
+	style = "night",
+	styles = {
+		comments = { italic = true },
+		keywords = { italic = true }
+	},
+	on_highlights = function(hl, c)
+		hl.PmenuSel = {
+			fg = c.hint
+		}
+		hl.CursorLine = {
+			bg = c.bg
+		}
+	end
+})
 
 vim.cmd [[
 colo tokyonight
-hi PmenuSel gui=bold guifg=#e0af68
-hi CursorLine gui=underline guibg=#1a1b26
+hi PmenuSel gui=bold
+hi CursorLine gui=underline
 ]]

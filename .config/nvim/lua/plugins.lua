@@ -1,6 +1,6 @@
 local status_ok, packer = pcall(require, 'packer')
 if not status_ok then
-	print("Packer is not  intalled")
+	print("Packer is not intalled")
 	return
 end
 
@@ -43,7 +43,6 @@ packer.startup(function(use)
 	use 'szw/vim-maximizer'
 
 	-- Navigation
-	use 'karb94/neoscroll.nvim'
 	use 'nvim-lua/popup.nvim'
 	use 'nvim-lua/plenary.nvim'
 	use 'ibhagwan/fzf-lua'
