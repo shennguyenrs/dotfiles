@@ -16,6 +16,6 @@ require("tokyonight").setup({
 
 vim.cmd [[
 colo tokyonight
-hi PmenuSel gui=bold
+hi Pmenusel gui=bold
 hi CursorLine gui=underline
 ]]
