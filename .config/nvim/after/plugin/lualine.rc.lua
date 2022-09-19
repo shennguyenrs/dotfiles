@@ -3,7 +3,8 @@ if not status_ok then return end
 
 lualine.setup {
 	options = {
-		theme = "tokyonight"
+		-- theme = "tokyonight"
+		theme = "catppuccin"
 	},
 	sections = {
 		lualine_b = {
