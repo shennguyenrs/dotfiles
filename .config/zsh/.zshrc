@@ -73,3 +73,6 @@ if test -e "$HOME/Application/kitty/shell-integration/kitty.zsh"; then source "$
 
 # bun completions
 [ -s "/home/shen/.bun/_bun" ] && source "/home/shen/.bun/_bun"
+
+# NVM
+source /usr/share/nvm/init-nvm.sh
