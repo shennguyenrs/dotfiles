@@ -106,7 +106,7 @@ lspconfig.dockerls.setup {
 -- Emmet
 lspconfig.emmet_ls.setup({
 	capabilities = capabilities,
-	filetypes = { 'html', 'svelte', 'typescriptreact', 'javascriptreact' },
+	filetypes = { 'html', 'svelte', 'typescriptreact', 'javascriptreact', 'javascript' },
 })
 
 -- Svelte
