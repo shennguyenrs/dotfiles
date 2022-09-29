@@ -10,7 +10,7 @@ lspconfig.setup {
 		"sumneko_lua",
 		"bashls",
 		"cssls",
-		"gols",
+		"gopls",
 		"html",
 		"tsserver",
 		"pyright",
