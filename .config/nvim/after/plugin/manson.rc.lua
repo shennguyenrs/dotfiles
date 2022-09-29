@@ -7,6 +7,7 @@ mason.setup({})
 
 lspconfig.setup {
 	ensure_installed = {
+		-- LSP
 		"sumneko_lua",
 		"bashls",
 		"cssls",
@@ -18,7 +19,12 @@ lspconfig.setup {
 		"tailwindcss",
 		"yamlls",
 		"emmet_ls",
+		-- Linter
 		"eslint_d",
-		"prettierd"
+		-- Formatter
+		"prettierd",
+		"gofumpt",
+		"goimports",
+		"luaformatter"
 	},
 }
