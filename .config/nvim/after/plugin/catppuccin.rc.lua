@@ -2,18 +2,11 @@ vim.g.catppuccin_flavour = "mocha" -- latte, frappe, macchiato, mocha
 local colors = require("catppuccin.palettes").get_palette()
 
 require("catppuccin").setup({
-	styles = {
-		comments = { "italic" },
-		keywords = { "italic" }
-	},
+	styles = { comments = { "italic" }, keywords = { "italic" } },
 	highlight_overrides = {
 		all = {
-			PmenuSel = {
-				fg = colors.flamingo
-			},
-			CursorLine = {
-				bg = colors.base
-			}
+			PmenuSel = { fg = colors.flamingo },
+			CursorLine = { bg = colors.base }
 		}
 	}
 })

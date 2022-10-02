@@ -2,7 +2,7 @@ vim.scriptencoding = "utf-8"
 vim.opt.encoding = "utf-8"
 vim.fileencoding = "utf-8"
 
-vim.opt.cmdheight = 2
+vim.opt.ch = 2
 vim.opt.number = true
 vim.opt.relativenumber = true
 vim.opt.cursorline = true
