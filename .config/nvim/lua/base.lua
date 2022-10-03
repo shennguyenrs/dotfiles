@@ -16,6 +16,7 @@ vim.opt.smartindent = true
 vim.opt.autoindent = true
 vim.opt.tabstop = 2
 vim.opt.shiftwidth = 2
+vim.cmd('set expandtab')
 vim.opt.backup = false
 vim.opt.splitbelow = true
 vim.opt.splitright = true
