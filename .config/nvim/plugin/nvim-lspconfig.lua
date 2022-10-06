@@ -74,10 +74,18 @@ lspconfig.pyright.setup { on_attach = common_attach, capabilities = capabilities
 lspconfig.tailwindcss.setup {}
 
 -- CssLs
-lspconfig.cssls.setup { on_attach = common_attach, capabilities = capabilities }
+lspconfig.cssls.setup {
+  on_attach = common_attach,
+  capabilities = capabilities,
+  filetypes = { 'css', 'scss', 'sass', 'handlebars' }
+}
 
 -- Html
-lspconfig.html.setup { on_attach = common_attach, capabilities = capabilities }
+lspconfig.html.setup {
+  on_attach = common_attach,
+  capabilities = capabilities,
+  filetypes = { 'html', 'handlebars' }
+}
 
 -- Golang
 lspconfig.gopls.setup {
@@ -99,7 +107,8 @@ lspconfig.dockerls.setup {
 lspconfig.emmet_ls.setup({
   capabilities = capabilities,
   filetypes = {
-    'html', 'svelte', 'typescriptreact', 'javascriptreact', 'javascript'
+    'html', 'handlebars', 'svelte', 'typescriptreact', 'javascriptreact',
+    'javascript'
   }
 })
 
