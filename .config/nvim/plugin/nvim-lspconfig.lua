@@ -115,6 +115,12 @@ lspconfig.emmet_ls.setup({
 -- Svelte
 lspconfig.svelte.setup({ on_attach = common_attach, capabilities = capabilities })
 
+-- Astro
+lspconfig.astro.setup({ on_attach = common_attach, capabilities = capabilities })
+
+-- Style lint
+lspconfig.stylelint_lsp.setup({ on_attach = common_attach, capabilities = capabilities })
+
 -- TsServer
 local function organize_imports()
   local params = {
