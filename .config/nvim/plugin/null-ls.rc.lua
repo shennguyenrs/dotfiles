@@ -6,6 +6,13 @@ end
 
 local builtins = null_ls.builtins
 
+-- Install some source from Manson to support this Null ls
+-- prettierd
+-- eslint_d
+-- luaformatter
+-- goimports
+-- gofumpt
+
 local sources = {
   builtins.formatting.prettierd, builtins.formatting.gofumpt,
   builtins.formatting.lua_format, builtins.formatting.goimports,

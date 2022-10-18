@@ -9,8 +9,7 @@ lspconfig.setup {
   ensure_installed = {
     -- LSP
     "sumneko_lua", "bashls", "cssls", "gopls", "html", "tsserver",
-    "pyright", "svelte", "tailwindcss", "yamlls", "emmet_ls", "astro", "stylelint_lsp", -- Linter
-    "eslint_d", -- Formatter
-    "prettierd", "gofumpt", "goimports", "luaformatter"
+    "pyright", "svelte", "tailwindcss", "yamlls", "emmet_ls", "astro",
+    "stylelint_lsp"
   }
 }
