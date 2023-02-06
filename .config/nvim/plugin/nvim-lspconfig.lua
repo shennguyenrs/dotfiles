@@ -67,6 +67,9 @@ end
 -- BashLs
 lspconfig.bashls.setup { on_attach = common_attach, capabilities = capabilities }
 
+-- SQL
+lspconfig.sqlls.setup { on_attach = common_attach, capabilities = capabilities }
+
 -- PyRight
 lspconfig.pyright.setup { on_attach = common_attach, capabilities = capabilities }
 
@@ -94,7 +97,8 @@ lspconfig.gopls.setup {
     -- Disable formating capability
     client.server_capabilities.document_formatting = false
     common_attach(client, bufnr)
-  end
+  end,
+  settings = { gopls = { gofumpt = true } }
 }
 
 -- Dockerfile
@@ -107,8 +111,8 @@ lspconfig.dockerls.setup {
 lspconfig.emmet_ls.setup({
   capabilities = capabilities,
   filetypes = {
-    'html', 'handlebars', 'svelte', 'astro', 'typescriptreact', 'javascriptreact',
-    'javascript'
+    'html', 'handlebars', 'svelte', 'astro', 'typescriptreact',
+    'javascriptreact', 'javascript'
   }
 })
 
@@ -119,7 +123,16 @@ lspconfig.svelte.setup({ on_attach = common_attach, capabilities = capabilities 
 lspconfig.astro.setup({ on_attach = common_attach, capabilities = capabilities })
 
 -- Style lint
-lspconfig.stylelint_lsp.setup({ on_attach = common_attach, capabilities = capabilities })
+lspconfig.stylelint_lsp.setup({
+  on_attach = common_attach,
+  capabilities = capabilities
+})
+
+-- Rust
+lspconfig.rust_analyzer.setup({
+  on_attach = common_attach,
+  capabilities = capabilities
+})
 
 -- TsServer
 local function organize_imports()

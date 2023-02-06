@@ -10,6 +10,6 @@ lspconfig.setup {
     -- LSP
     "sumneko_lua", "bashls", "cssls", "gopls", "html", "tsserver",
     "pyright", "svelte", "tailwindcss", "yamlls", "emmet_ls", "astro",
-    "stylelint_lsp"
+    "stylelint_lsp", "rust_analyzer", "sqlls"
   }
 }
