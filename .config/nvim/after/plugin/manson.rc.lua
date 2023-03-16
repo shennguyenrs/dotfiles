@@ -8,8 +8,8 @@ mason.setup({})
 lspconfig.setup {
   ensure_installed = {
     -- LSP
-    "sumneko_lua", "bashls", "cssls", "gopls", "html", "tsserver",
+    "lua_ls", "bashls", "cssls", "gopls", "html", "tsserver",
     "pyright", "svelte", "tailwindcss", "yamlls", "emmet_ls", "astro",
-    "stylelint_lsp", "rust_analyzer", "sqlls"
+    "stylelint_lsp", "rust_analyzer", "sqlls", "dockerls", "docker_compose_language_service"
   }
 }

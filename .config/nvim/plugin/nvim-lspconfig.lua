@@ -38,14 +38,16 @@ local common_attach = function(client, bufnr)
     bufopts)
 
   -- Formating
-  if client.server_capabilities.documentFormattingProvider then
-    vim.api.nvim_create_autocmd("BufWritePre", {
-      group = vim.api.nvim_create_augroup("Format", { clear = true }),
-      buffer = bufnr,
-      callback = function() vim.lsp.buf.format { async = true } end
-    })
-  end
+  -- if client.server_capabilities.documentFormattingProvider then
+  --   vim.api.nvim_create_autocmd("BufWritePre", {
+  --     group = vim.api.nvim_create_augroup("Format", { clear = true }),
+  --     buffer = bufnr,
+  --     callback = function() vim.lsp.buf.format { async = true } end
+  --   })
+  -- end
 end
+
+local lsp_flags = { debounce_text_changes = 150 }
 
 -- Set up completion using nvim_cmp with LSP source
 local capabilities = require('cmp_nvim_lsp').default_capabilities(
@@ -65,29 +67,70 @@ for type, icon in pairs(signs) do
 end
 
 -- BashLs
-lspconfig.bashls.setup { on_attach = common_attach, capabilities = capabilities }
+lspconfig.bashls.setup {
+  on_attach = common_attach,
+  capabilities = capabilities,
+  flags = lsp_flags
+}
+
+-- Dockerls
+lspconfig.dockerls.setup {
+  on_attach = common_attach,
+  capabilities = capabilities,
+  flags = lsp_flags
+}
+
+-- Docker_compose_language_service
+lspconfig.docker_compose_language_service.setup {
+  on_attach = common_attach,
+  capabilities = capabilities,
+  flags = lsp_flags
+}
 
 -- SQL
-lspconfig.sqlls.setup { on_attach = common_attach, capabilities = capabilities }
+lspconfig.sqlls.setup {
+  on_attach = common_attach,
+  capabilities = capabilities,
+  flags = lsp_flags
+}
 
 -- PyRight
-lspconfig.pyright.setup { on_attach = common_attach, capabilities = capabilities }
+lspconfig.pyright.setup {
+  on_attach = common_attach,
+  capabilities = capabilities,
+  flags = lsp_flags
+}
 
 -- Tailwind CSS
-lspconfig.tailwindcss.setup {}
+lspconfig.tailwindcss.setup {
+  on_attach = common_attach,
+  capabilities = capabilities,
+  flags = lsp_flags,
+  filetypes = {
+    "astro", "astro-markdown", "handlebars", "hbs", "html", "css", "less",
+    "postcss", "sass", "scss", "javascript", "javascriptreact",
+    "typescript", "typescriptreact", "svelte"
+  },
+  root_pattern = {
+    'tailwind.config.js', 'tailwind.config.ts', 'postcss.config.js',
+    'postcss.config.ts', 'package.json', 'node_modules', '.git'
+  }
+}
 
 -- CssLs
 lspconfig.cssls.setup {
   on_attach = common_attach,
   capabilities = capabilities,
-  filetypes = { 'css', 'scss', 'sass', 'handlebars' }
+  filetypes = { 'css', 'scss', 'sass', 'handlebars' },
+  flags = lsp_flags
 }
 
 -- Html
 lspconfig.html.setup {
   on_attach = common_attach,
   capabilities = capabilities,
-  filetypes = { 'html', 'handlebars' }
+  filetypes = { 'html', 'handlebars' },
+  flags = lsp_flags
 }
 
 -- Golang
@@ -98,13 +141,15 @@ lspconfig.gopls.setup {
     client.server_capabilities.document_formatting = false
     common_attach(client, bufnr)
   end,
-  settings = { gopls = { gofumpt = true } }
+  settings = { gopls = { gofumpt = true } },
+  flags = lsp_flags
 }
 
 -- Dockerfile
 lspconfig.dockerls.setup {
   on_attach = common_attach,
-  capabilities = capabilities
+  capabilities = capabilities,
+  flags = lsp_flags
 }
 
 -- Emmet
@@ -113,25 +158,36 @@ lspconfig.emmet_ls.setup({
   filetypes = {
     'html', 'handlebars', 'svelte', 'astro', 'typescriptreact',
     'javascriptreact', 'javascript'
-  }
+  },
+  flags = lsp_flags
 })
 
 -- Svelte
-lspconfig.svelte.setup({ on_attach = common_attach, capabilities = capabilities })
+lspconfig.svelte.setup({
+  on_attach = common_attach,
+  capabilities = capabilities,
+  flags = lsp_flags
+})
 
 -- Astro
-lspconfig.astro.setup({ on_attach = common_attach, capabilities = capabilities })
+lspconfig.astro.setup({
+  on_attach = common_attach,
+  capabilities = capabilities,
+  flags = lsp_flags
+})
 
 -- Style lint
 lspconfig.stylelint_lsp.setup({
   on_attach = common_attach,
-  capabilities = capabilities
+  capabilities = capabilities,
+  flags = lsp_flags
 })
 
 -- Rust
 lspconfig.rust_analyzer.setup({
   on_attach = common_attach,
-  capabilities = capabilities
+  capabilities = capabilities,
+  flags = lsp_flags
 })
 
 -- TsServer
@@ -159,7 +215,8 @@ lspconfig.tsserver.setup {
   capabilities = capabilities,
   commands = {
     OrganizeImports = { organize_imports, description = "Organize imports" }
-  }
+  },
+  flags = lsp_flags
 }
 
 -- Yaml
@@ -173,11 +230,12 @@ lspconfig.yamlls.setup {
         kubernetes = "https://raw.githubusercontent.com/kubernetes/kubernetes/master/api/openapi-spec/swagger.json"
       }
     }
-  }
+  },
+  flags = lsp_flags
 }
 
--- Sumneko_lua
-lspconfig.sumneko_lua.setup {
+-- lua_ls
+lspconfig.lua_ls.setup {
   on_attach = function(client, bufnr)
     -- Disable formating capability
     client.server_capabilities.document_formatting = false
@@ -196,5 +254,6 @@ lspconfig.sumneko_lua.setup {
         checkThirdParty = false
       }
     }
-  }
+  },
+  flags = lsp_flags
 }
