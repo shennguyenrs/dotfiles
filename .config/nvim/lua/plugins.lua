@@ -42,6 +42,7 @@ packer.startup(function(use)
   use 'norcalli/nvim-colorizer.lua'
   use 'szw/vim-maximizer'
   use { "catppuccin/nvim", as = "catppuccin" }
+  use "lukas-reineke/indent-blankline.nvim"
 
   -- Navigation
   use 'nvim-lua/popup.nvim'
@@ -51,6 +52,14 @@ packer.startup(function(use)
   -- Gits
   use 'lewis6991/gitsigns.nvim'
   use 'sindrets/diffview.nvim'
+
+  -- Flutter
+  use {
+    'akinsho/flutter-tools.nvim',
+    requires = {
+      'stevearc/dressing.nvim'       -- optional for vim.ui.select
+    }
+  }
 
   -- Others
   use 'folke/trouble.nvim'

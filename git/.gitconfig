@@ -15,3 +15,5 @@
 	st = status
 	ft = fetch
 	sw = switch
+[safe]
+	directory = /opt/flutter

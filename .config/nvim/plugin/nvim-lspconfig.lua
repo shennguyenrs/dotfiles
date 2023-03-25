@@ -33,6 +33,7 @@ local common_attach = function(client, bufnr)
   keymap.set("n", "<space>D", lspbuf.type_definition, bufopts)
   keymap.set("n", "<space>rn", lspbuf.rename, bufopts)
   keymap.set("n", "<space>ca", lspbuf.code_action, bufopts)
+  keymap.set("x", "<space>ca", lspbuf.code_action, bufopts)
   keymap.set("n", "gr", lspbuf.references, bufopts)
   keymap.set("n", "<space>f", function() lspbuf.format { async = true } end,
     bufopts)
@@ -82,6 +83,13 @@ lspconfig.dockerls.setup {
 
 -- Docker_compose_language_service
 lspconfig.docker_compose_language_service.setup {
+  on_attach = common_attach,
+  capabilities = capabilities,
+  flags = lsp_flags
+}
+
+-- Dart
+lspconfig.dartls.setup {
   on_attach = common_attach,
   capabilities = capabilities,
   flags = lsp_flags
