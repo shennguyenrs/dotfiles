@@ -13,6 +13,8 @@ local builtins = null_ls.builtins
 -- goimports
 -- gofumpt
 -- rustfmt
+-- sql-formatter
+-- sqlfluff
 
 local sources = {
   builtins.formatting.prettierd, builtins.formatting.gofumpt,
@@ -20,7 +22,8 @@ local sources = {
   builtins.formatting.lua_format, builtins.formatting.goimports,
   builtins.formatting.rustfmt, builtins.diagnostics.eslint_d.with({
   diagnostics_format = '[eslint] #{m}\n(#{c})'
-}), builtins.code_actions.gitsigns, builtins.code_actions.refactoring
+}), builtins.code_actions.gitsigns, builtins.code_actions.refactoring,
+  builtins.formatting.sql_formatter
 }
 
 null_ls.setup({
@@ -35,5 +38,5 @@ null_ls.setup({
         end
       })
     end
-  end,
+  end
 })

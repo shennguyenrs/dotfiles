@@ -99,7 +99,8 @@ lspconfig.dartls.setup {
 lspconfig.sqlls.setup {
   on_attach = common_attach,
   capabilities = capabilities,
-  flags = lsp_flags
+  flags = lsp_flags,
+  root_pattern = { ".git" }
 }
 
 -- PyRight
@@ -195,7 +196,8 @@ lspconfig.stylelint_lsp.setup({
 lspconfig.rust_analyzer.setup({
   on_attach = common_attach,
   capabilities = capabilities,
-  flags = lsp_flags
+  flags = lsp_flags,
+  root_pattern = { "Cargo.toml" }
 })
 
 -- TsServer
