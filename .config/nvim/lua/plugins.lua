@@ -1,6 +1,6 @@
 local status_ok, packer = pcall(require, 'packer')
 if not status_ok then
-  print("Packer is not intalled")
+  print('Packer is not intalled')
   return
 end
 
@@ -31,8 +31,9 @@ packer.startup(function(use)
   use 'saadparwaiz1/cmp_luasnip'
   use 'mlaursen/vim-react-snippets'
   use 'andymass/vim-matchup'
-  use 'jiangmiao/auto-pairs'
+  -- use 'jiangmiao/auto-pairs'
   use 'AndrewRadev/tagalong.vim'
+  use 'windwp/nvim-autopairs'
 
   -- UI
   use { 'dracula/vim', as = 'dracula' }
@@ -41,13 +42,14 @@ packer.startup(function(use)
   use 'kyazdani42/nvim-web-devicons'
   use 'norcalli/nvim-colorizer.lua'
   use 'szw/vim-maximizer'
-  use { "catppuccin/nvim", as = "catppuccin" }
-  use "lukas-reineke/indent-blankline.nvim"
+  use { 'catppuccin/nvim', as = 'catppuccin' }
+  use 'lukas-reineke/indent-blankline.nvim'
 
-  -- Navigation
+  -- UI support
   use 'nvim-lua/popup.nvim'
   use 'nvim-lua/plenary.nvim'
-  use 'ibhagwan/fzf-lua'
+  -- use 'ibhagwan/fzf-lua'
+  use 'nvim-telescope/telescope.nvim'
 
   -- Gits
   use 'lewis6991/gitsigns.nvim'
@@ -60,6 +62,15 @@ packer.startup(function(use)
       'stevearc/dressing.nvim'       -- optional for vim.ui.select
     }
   }
+
+  -- ChatGPT
+  use({
+    'jackMort/ChatGPT.nvim',
+    requires = {
+      'MunifTanjim/nui.nvim', 'nvim-lua/plenary.nvim',
+      'nvim-telescope/telescope.nvim'
+    }
+  })
 
   -- Others
   use 'folke/trouble.nvim'
