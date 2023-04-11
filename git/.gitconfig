@@ -7,8 +7,7 @@
 	a = add
 	b = branch
 	co = checkout
-	cob = checkout -b
-	cm = commit -m
+	cm = commit
 	cl = clone
 	ps = push
 	pl = pull
