@@ -50,6 +50,7 @@ packer.startup(function(use)
   use 'nvim-lua/plenary.nvim'
   -- use 'ibhagwan/fzf-lua'
   use 'nvim-telescope/telescope.nvim'
+  use {'nvim-telescope/telescope-fzf-native.nvim', run = 'make' }
 
   -- Gits
   use 'lewis6991/gitsigns.nvim'
