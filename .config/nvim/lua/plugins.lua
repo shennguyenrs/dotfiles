@@ -50,21 +50,16 @@ packer.startup(function(use)
   use 'nvim-lua/plenary.nvim'
   -- use 'ibhagwan/fzf-lua'
   use 'nvim-telescope/telescope.nvim'
-  use {'nvim-telescope/telescope-fzf-native.nvim', run = 'make' }
+  use { 'nvim-telescope/telescope-fzf-native.nvim', run = 'make' }
 
   -- Gits
   use 'lewis6991/gitsigns.nvim'
-  use 'sindrets/diffview.nvim'
+  -- use 'sindrets/diffview.nvim'
 
   -- Flutter
-  use {
-    'akinsho/flutter-tools.nvim',
-    requires = {
-      'stevearc/dressing.nvim'       -- optional for vim.ui.select
-    }
-  }
+  use { 'akinsho/flutter-tools.nvim', requires = { 'stevearc/dressing.nvim' } }
 
-  -- ChatGPT
+  -- AI
   use({
     'jackMort/ChatGPT.nvim',
     requires = {
@@ -72,6 +67,7 @@ packer.startup(function(use)
       'nvim-telescope/telescope.nvim'
     }
   })
+  use 'Exafunction/codeium.vim'
 
   -- Others
   use 'folke/trouble.nvim'
