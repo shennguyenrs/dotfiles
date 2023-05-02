@@ -3,7 +3,8 @@ if not status_ok then return end
 
 lualine.setup {
   options = {
-    theme = 'catppuccin',
+    theme = 'rose-pine',
+    -- theme = 'catppuccin',
     component_separators = '',
     section_separators = { left = '', right = '' }
   },

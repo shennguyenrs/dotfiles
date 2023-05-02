@@ -44,6 +44,7 @@ packer.startup(function(use)
   use 'szw/vim-maximizer'
   use { 'catppuccin/nvim', as = 'catppuccin' }
   use 'lukas-reineke/indent-blankline.nvim'
+  use({ 'rose-pine/neovim', as = 'rose-pine' })
 
   -- UI support
   use 'nvim-lua/popup.nvim'
