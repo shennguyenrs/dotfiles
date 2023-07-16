@@ -72,7 +72,7 @@ if test -e "$HOME/Application/kitty/shell-integration/kitty.zsh"; then source "$
 # END_KITTY_SHELL_INTEGRATION
 
 # bun completions
-[ -s "/home/shen/.bun/_bun" ] && source "/home/shen/.bun/_bun"
+# [ -s "/home/shen/.bun/_bun" ] && source "/home/shen/.bun/_bun"
 
 # NVM
 source /usr/share/nvm/init-nvm.sh
