@@ -31,7 +31,6 @@ packer.startup(function(use)
   use 'saadparwaiz1/cmp_luasnip'
   use 'mlaursen/vim-react-snippets'
   use 'andymass/vim-matchup'
-  -- use 'jiangmiao/auto-pairs'
   use 'AndrewRadev/tagalong.vim'
   use 'windwp/nvim-autopairs'
 
@@ -49,13 +48,11 @@ packer.startup(function(use)
   -- UI support
   use 'nvim-lua/popup.nvim'
   use 'nvim-lua/plenary.nvim'
-  -- use 'ibhagwan/fzf-lua'
   use 'nvim-telescope/telescope.nvim'
   use { 'nvim-telescope/telescope-fzf-native.nvim', run = 'make' }
 
   -- Gits
   use 'lewis6991/gitsigns.nvim'
-  -- use 'sindrets/diffview.nvim'
 
   -- Flutter
   use { 'akinsho/flutter-tools.nvim', requires = { 'stevearc/dressing.nvim' } }

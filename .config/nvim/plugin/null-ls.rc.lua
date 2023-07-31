@@ -17,12 +17,19 @@ local builtins = null_ls.builtins
 -- sqlfluff
 
 local sources = {
-  builtins.formatting.prettierd, builtins.formatting.gofumpt,
-  builtins.diagnostics.sqlfluff.with({ extra_args = { "--dialect", "postgres" } }),
-  builtins.formatting.lua_format, builtins.formatting.goimports,
-  builtins.formatting.rustfmt, builtins.diagnostics.eslint_d.with({
-  diagnostics_format = '[eslint] #{m}\n(#{c})'
-}), builtins.code_actions.gitsigns, builtins.code_actions.refactoring,
+  builtins.formatting.prettierd,
+  builtins.formatting.gofumpt,
+  builtins.diagnostics.sqlfluff.with({
+    extra_args = { "--dialect", "postgres" }
+  }),
+  builtins.formatting.lua_format,
+  builtins.formatting.goimports,
+  builtins.formatting.rustfmt,
+  builtins.diagnostics.eslint_d.with({
+    diagnostics_format = '[eslint] #{m}\n(#{c})'
+  }),
+  builtins.code_actions.gitsigns,
+  builtins.code_actions.refactoring,
   builtins.formatting.sql_formatter
 }
 
@@ -34,7 +41,7 @@ null_ls.setup({
         group = vim.api.nvim_create_augroup("Format", { clear = true }),
         buffer = bufnr,
         callback = function()
-          vim.lsp.buf.format { async = true }
+          vim.lsp.buf.format { async = false }
         end
       })
     end
