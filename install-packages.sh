@@ -2,7 +2,7 @@
 
 # Install packages
 sudo pacman -S \
-  stow btop bat mpv exa ranger highlight kitty starship dolphin-plugins flameshot rclone \
+  stow btop bat mpv exa ranger highlight kitty starship dolphin-plugins flameshot rclone zsh kdeplasma-addons \
   vivaldi vivaldi-ffmpeg-codecs \
   neovim fzf fd ripgrep nodejs npm luarocks xclip python-neovim \
   lazygit docker docker-compose \
