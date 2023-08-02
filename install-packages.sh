@@ -12,10 +12,10 @@ sudo pacman -S \
 
 # Install yay packages
 yay -S \
-  google-chrome-dev firefox-developer-edition telegram-desktop-bin-dev \
+  google-chrome-dev firefox-developer-edition telegram-desktop-bin \
   postman-bin visual-studio-code-bin \
   nvim-packer-git \
-  lazydocker nvm \
+  lazydocker-bin nvm \
   apple-fonts \
   ibus-bamboo-git ibus-autostart \
   latte-dock-git plasma5-applets-virtual-desktop-bar-git \
