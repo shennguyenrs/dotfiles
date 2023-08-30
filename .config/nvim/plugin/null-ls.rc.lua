@@ -15,6 +15,7 @@ local builtins = null_ls.builtins
 -- rustfmt
 -- sql-formatter
 -- sqlfluff
+-- yapf
 
 local sources = {
   builtins.formatting.prettierd,
@@ -30,7 +31,8 @@ local sources = {
   }),
   builtins.code_actions.gitsigns,
   builtins.code_actions.refactoring,
-  builtins.formatting.sql_formatter
+  builtins.formatting.sql_formatter,
+  builtins.formatting.yapf
 }
 
 null_ls.setup({
