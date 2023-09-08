@@ -2,10 +2,10 @@
 
 # Install packages
 sudo pacman -S \
-  stow btop bat mpv exa ranger highlight kitty starship dolphin-plugins flameshot rclone zsh kdeplasma-addons \
+  stow btop bat mpv eza ranger highlight kitty starship dolphin-plugins flameshot rclone zsh kdeplasma-addons \
   vivaldi vivaldi-ffmpeg-codecs \
-  neovim fzf fd ripgrep nodejs npm luarocks xclip python-pyvim python-pip \
-  lazygit docker docker-compose \
+  neovim fzf fd ripgrep nodejs npm luarocks xclip python-pynvim python-pip \
+  lazygit docker docker-compose docker-buildx \
   ttf-firacode-nerd noto-fonts-cjk noto-fonts-emoji ttf-jetbrains-mono-nerd \
   ktorrent kvantum-qt5 \
   yt-dlp \
