@@ -237,7 +237,7 @@ lspconfig.yamlls.setup {
     yaml = {
       trace = { server = "verbose" },
       schemas = {
-        kubernetes = "https://raw.githubusercontent.com/kubernetes/kubernetes/master/api/openapi-spec/swagger.json"
+        ["https://json.schemastore.org/github-workflow.json"] = "/.github/workflows/*"
       }
     }
   },

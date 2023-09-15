@@ -53,6 +53,7 @@ packer.startup(function(use)
 
   -- Gits
   use 'lewis6991/gitsigns.nvim'
+  use 'sindrets/diffview.nvim'
 
   -- Flutter
   use { 'akinsho/flutter-tools.nvim', requires = { 'stevearc/dressing.nvim' } }
