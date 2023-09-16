@@ -9,6 +9,7 @@ sudo pacman -S \
   ttf-firacode-nerd noto-fonts-cjk noto-fonts-emoji ttf-jetbrains-mono-nerd \
   ktorrent kvantum-qt5 \
   yt-dlp \
+  w3m imlib2 \
 
 # Install yay packages
 yay -S \
