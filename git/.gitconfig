@@ -14,5 +14,6 @@
 	st = status
 	ft = fetch
 	sw = switch
+  rb = rebase
 [safe]
 	directory = /opt/flutter
