@@ -15,5 +15,6 @@
 	ft = fetch
 	sw = switch
   rb = rebase
+  cp = cherry-pick
 [safe]
 	directory = /opt/flutter
