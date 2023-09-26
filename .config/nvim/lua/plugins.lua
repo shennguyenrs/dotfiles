@@ -54,18 +54,14 @@ packer.startup(function(use)
   -- Gits
   use 'lewis6991/gitsigns.nvim'
   use 'sindrets/diffview.nvim'
+  use 'tpope/vim-fugitive'
+  use 'ThePrimeagen/git-worktree.nvim'
 
   -- Flutter
   use { 'akinsho/flutter-tools.nvim', requires = { 'stevearc/dressing.nvim' } }
 
   -- AI
-  use({
-    'jackMort/ChatGPT.nvim',
-    requires = {
-      'MunifTanjim/nui.nvim', 'nvim-lua/plenary.nvim',
-      'nvim-telescope/telescope.nvim'
-    }
-  })
+  use({ 'jackMort/ChatGPT.nvim', requires = { 'MunifTanjim/nui.nvim' } })
   use 'Exafunction/codeium.vim'
 
   -- Others
