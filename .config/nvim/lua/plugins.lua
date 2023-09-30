@@ -71,4 +71,5 @@ packer.startup(function(use)
   use 'numToStr/Comment.nvim'
   use 'ellisonleao/glow.nvim'
   use 'ThePrimeagen/refactoring.nvim'
+  use 'kylechui/nvim-surround'
 end)
