@@ -3,7 +3,7 @@
 # Install packages
 sudo pacman -S \
   stow btop bat mpv eza ranger highlight kitty starship dolphin-plugins flameshot rclone zsh kdeplasma-addons partitionmanager \
-  vivaldi vivaldi-ffmpeg-codecs \
+  chromium vivaldi vivaldi-ffmpeg-codecs \
   neovim fzf fd ripgrep nodejs npm luarocks xclip python-pynvim python-pip \
   lazygit docker docker-compose docker-buildx \
   ttf-firacode-nerd noto-fonts-cjk noto-fonts-emoji ttf-jetbrains-mono-nerd \
@@ -13,7 +13,7 @@ sudo pacman -S \
 
 # Install yay packages
 yay -S \
-  google-chrome-dev firefox-developer-edition telegram-desktop-bin \
+  firefox-developer-edition telegram-desktop-bin \
   postman-bin visual-studio-code-bin \
   nvim-packer-git \
   lazydocker-bin nvm \
