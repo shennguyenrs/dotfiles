@@ -2,14 +2,13 @@
 
 # Install packages
 sudo pacman -S \
-  stow btop bat mpv eza ranger highlight kitty starship dolphin-plugins flameshot rclone zsh kdeplasma-addons partitionmanager \
+  stow btop bat mpv eza lf highlight kitty starship dolphin-plugins flameshot rclone zsh kdeplasma-addons partitionmanager \
   chromium vivaldi vivaldi-ffmpeg-codecs \
   neovim fzf fd ripgrep nodejs npm luarocks xclip python-pynvim python-pip \
   lazygit docker docker-compose docker-buildx \
   ttf-firacode-nerd noto-fonts-cjk noto-fonts-emoji ttf-jetbrains-mono-nerd \
   ktorrent kvantum-qt5 \
-  yt-dlp \
-  w3m imlib2 \
+  yt-dlp 
 
 # Install yay packages
 yay -S \
