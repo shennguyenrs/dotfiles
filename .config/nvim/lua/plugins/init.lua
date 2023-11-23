@@ -1,36 +1,38 @@
 return {
-  'kyazdani42/nvim-web-devicons',
+  "kyazdani42/nvim-web-devicons",
   -- Load with lazy
-  { 'dracula/vim',           name = 'dracula',    lazy = true },
-  { 'catppuccin/nvim',       name = 'catppuccin', lazy = true },
-  { 'folke/tokyonight.nvim', name = 'tokyonight', lazy = true },
+  { "dracula/vim",           name = "dracula",    lazy = true },
+  { "catppuccin/nvim",       name = "catppuccin", lazy = true },
+  { "folke/tokyonight.nvim", name = "tokyonight", lazy = true },
   {
-    'akinsho/flutter-tools.nvim',
-    dependencies = { 'stevearc/dressing.nvim' },
+    "akinsho/flutter-tools.nvim",
+    dependencies = { "stevearc/dressing.nvim" },
     lazy = true,
-    ft = 'dart'
+    ft = "dart",
   },
   -- Load with events
-  { 'AndrewRadev/tagalong.vim', event = "VeryLazy" },
-  { 'windwp/nvim-autopairs',    event = "InsertEnter", opts = {} },
-  { 'szw/vim-maximizer',        event = "VeryLazy" },
-  { 'kylechui/nvim-surround',   version = "*",         event = "VeryLazy", opts = {} },
-  { 'numToStr/Comment.nvim',    event = "VeryLazy",    opts = {} },
-  { 'folke/trouble.nvim',       event = "VeryLazy" },
-  { 'folke/todo-comments.nvim', event = "VeryLazy" },
-  { 'tpope/vim-fugitive',       event = "VeryLazy" },
+  { "AndrewRadev/tagalong.vim", event = "VeryLazy" },
+  { "windwp/nvim-autopairs",    event = "InsertEnter",                      opts = {} },
+  { "szw/vim-maximizer",        event = "VeryLazy" },
+  { "kylechui/nvim-surround",   version = "*",                              event = "VeryLazy", opts = {} },
+  { "numToStr/Comment.nvim",    event = "VeryLazy",                         opts = {} },
+  { "folke/trouble.nvim",       event = "VeryLazy" },
+  { "folke/todo-comments.nvim", dependencies = { "nvim-lua/plenary.nvim" }, event = "VeryLazy", opts = {} },
+  { "tpope/vim-fugitive",       event = "VeryLazy" },
   {
-    'norcalli/nvim-colorizer.lua',
-    event = 'VeryLazy',
-    config = function() require("colorizer").setup() end
+    "norcalli/nvim-colorizer.lua",
+    event = "VeryLazy",
+    config = function()
+      require("colorizer").setup()
+    end,
   },
   {
-    'folke/which-key.nvim',
+    "folke/which-key.nvim",
     event = "VeryLazy",
     init = function()
       vim.o.timeout = true
       vim.o.timeoutlen = 300
     end,
-    opts = {}
+    opts = {},
   },
 }
