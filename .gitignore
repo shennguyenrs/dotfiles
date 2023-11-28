@@ -1,3 +1,5 @@
-.zcompdump
 __pycache__/
+
+.zcompdump
 *.log
+.config/nvim/lazy-lock.json
