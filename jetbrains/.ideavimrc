@@ -1,0 +1,77 @@
+set scrolloff=5
+set incsearch
+set showmode
+set showcmd
+set relativenumber
+set ignorecase
+set smartcase
+set incsearch
+set hlsearch
+set smartcase
+set splitbelow
+set splitright
+set clipboard+=unnamed
+
+let mapleader = "\"
+
+" Which-key
+set notimeout
+set which-key
+
+let g:WhichKey_FontSize = 16
+let g:WhichKey_CommandColor = "#41ead4"
+let g:WhichKey_PrefixColor = "#f335b2"
+let g:WhichKey_SortOrder = "by_key_prefix_first"
+let g:WhichKeyDesc_leader = "<leader> Leader key"
+
+" Window navigation
+nnoremap <A-h> <C-w>h
+nnoremap <A-l> <C-w>l
+nnoremap <A-k> <C-w>k
+nnoremap <A-j> <C-w>j
+
+map <esc><esc> :noh<return>
+
+" File navigation
+map <leader>ff <action>(GotoFile)
+map <leader>sg <action>(FindInPath)
+
+let g:WhichKeyDesc_file_nav = "<leader>f File navigation"
+let g:WhichKeyDesc_file_nav_goto_file = "<leader>ff Go to file"
+let g:WhichKeyDesc_search_file = "<leader>s Search content"
+let g:WhichKeyDesc_search_file_goto_content = "<leader>sg Search for file content"
+
+" Refactoring
+map <leader>rn <Action>(RenameElement)
+map <leader>rm <Action>(ExtractMethod)
+map <leader>rv <Action>(IntroduceVariable)
+map <leader>rf <Action>(IntroduceField)
+map <leader>rs <Action>(ChangeSignature)
+map <leader>rr <Action>(Refactorings.QuickListPopupAction)
+
+let g:WhichKeyDesc_refactoring = "<leader>r Refactoring menu"
+let g:WhichKeyDesc_refactoring_rename = "<leader>rn Rename element"
+let g:WhichKeyDesc_refactoring_method = "<leader>rm Extract method"
+let g:WhichKeyDesc_refactoring_variable = "<leader>rv Introduce variable"
+let g:WhichKeyDesc_refactoring_field = "<leader>rf Introduce field"
+let g:WhichKeyDesc_refactoring_signature = "<leader>rs Change signature"
+let g:WhichKeyDesc_refactoring_all = "<leader>rr Open refactorings list"
+
+" Go to code
+nmap gd <Action>(GotoDeclaration)
+nmap ]d <Action>(GotoNextError)
+nmap [d <Action>(GotoPreviousError)
+
+let g:WhichKeyDesc_goto = "g Go to X"
+let g:WhichKeyDesc_goto = "[] Go to X"
+let g:WhichKeyDesc_goto_declaration = "gd Go to Definition"
+let g:WhichKeyDesc_goto_next_error = "]d Go to next error"
+let g:WhichKeyDesc_goto_previous_error = "[d Go to previous error"
+
+" Others
+nmap <space>f <Action>(ReformatCode)
+nmap <space>ca <Action>(ShowIntentionActions)
+
+let g:WhichKeyDesc_codeActions = "<space> Format code"
+let g:WhichKeyDesc_codeActions_format = "<space>f Format code"
+let g:WhichKeyDesc_codeActions_show_menu = "<space>ca Show context actions"
