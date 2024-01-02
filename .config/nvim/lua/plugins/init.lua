@@ -1,15 +1,9 @@
 return {
   "kyazdani42/nvim-web-devicons",
   -- Load with lazy
-  { "dracula/vim",           name = "dracula",    lazy = true },
-  { "catppuccin/nvim",       name = "catppuccin", lazy = true },
-  { "folke/tokyonight.nvim", name = "tokyonight", lazy = true },
-  {
-    "akinsho/flutter-tools.nvim",
-    dependencies = { "stevearc/dressing.nvim" },
-    lazy = true,
-    ft = "dart",
-  },
+  { "dracula/vim",              name = "dracula",                           lazy = true },
+  { "catppuccin/nvim",          name = "catppuccin",                        lazy = true },
+  { "folke/tokyonight.nvim",    name = "tokyonight",                        lazy = true },
   -- Load with events
   { "AndrewRadev/tagalong.vim", event = "VeryLazy" },
   { "windwp/nvim-autopairs",    event = "InsertEnter",                      opts = {} },
