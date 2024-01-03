@@ -42,20 +42,10 @@ let g:WhichKeyDesc_search_file = "<leader>s Search content"
 let g:WhichKeyDesc_search_file_goto_content = "<leader>sg Search for file content"
 
 " Refactoring
-map <leader>rn <Action>(RenameElement)
-map <leader>rm <Action>(ExtractMethod)
-map <leader>rv <Action>(IntroduceVariable)
-map <leader>rf <Action>(IntroduceField)
-map <leader>rs <Action>(ChangeSignature)
-map <leader>rr <Action>(Refactorings.QuickListPopupAction)
+map <space>rn <Action>(RenameElement)
 
-let g:WhichKeyDesc_refactoring = "<leader>r Refactoring menu"
-let g:WhichKeyDesc_refactoring_rename = "<leader>rn Rename element"
-let g:WhichKeyDesc_refactoring_method = "<leader>rm Extract method"
-let g:WhichKeyDesc_refactoring_variable = "<leader>rv Introduce variable"
-let g:WhichKeyDesc_refactoring_field = "<leader>rf Introduce field"
-let g:WhichKeyDesc_refactoring_signature = "<leader>rs Change signature"
-let g:WhichKeyDesc_refactoring_all = "<leader>rr Open refactorings list"
+let g:WhichKeyDesc_refactoring = "<space>r Refactoring menu"
+let g:WhichKeyDesc_refactoring_rename = "<space>rn Rename element"
 
 " Go to code
 nmap gd <Action>(GotoDeclaration)
