@@ -65,3 +65,7 @@ nmap <space>ca <Action>(ShowIntentionActions)
 let g:WhichKeyDesc_codeActions = "<space> Format code"
 let g:WhichKeyDesc_codeActions_format = "<space>f Format code"
 let g:WhichKeyDesc_codeActions_show_menu = "<space>ca Show context actions"
+
+nmap <A-m> <Action>(MaximizeEditorInSplit)
+vmap <A-m> <Action>(MaximizeEditorInSplit)
+imap <A-m> <Action>(MaximizeEditorInSplit)
