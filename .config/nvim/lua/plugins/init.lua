@@ -29,4 +29,24 @@ return {
     end,
     opts = {},
   },
+  {
+    "iamcco/markdown-preview.nvim",
+    cmd = { "MarkdownPreviewToggle", "MarkdownPreview", "MarkdownPreviewStop" },
+    build = "cd app && npm install",
+    init = function()
+      vim.g.mkdp_filetypes = { "markdown" }
+    end,
+    ft = { "markdown" },
+    event = "VeryLazy",
+  },
+  {
+    "folke/twilight.nvim",
+    event = "VeryLazy",
+    opts = {},
+  },
+  {
+    "folke/zen-mode.nvim",
+    event = "VeryLazy",
+    opts = {},
+  },
 }
