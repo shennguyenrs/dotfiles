@@ -4,7 +4,6 @@
 -- stylua
 -- goimports
 -- gofumpt
--- rustfmt
 -- sql-formatter
 -- sqlfluff
 -- yapf
@@ -24,10 +23,6 @@ return {
 			builtins.diagnostics.sqlfluff.with({ extra_args = { "--dialect", "postgres" } }),
 			builtins.formatting.stylua,
 			builtins.formatting.goimports,
-			-- builtins.formatting.rustfmt,
-			-- builtins.diagnostics.eslint_d.with({
-			--   diagnostics_format = "[eslint] #{m}\n(#{c})",
-			-- }),
 			builtins.code_actions.gitsigns,
 			builtins.code_actions.refactoring,
 			builtins.formatting.sql_formatter,
