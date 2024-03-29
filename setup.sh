@@ -8,7 +8,7 @@ git submodule update
 
 # Directories to installed on machine
 config=( .config )
-global=( git tmux )
+global=( git tmux jetbrains )
 
 # Run Stow command with location and directories
 stowit() {

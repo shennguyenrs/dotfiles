@@ -23,13 +23,10 @@
 	url = https://github.com/michaelaquilina/zsh-you-should-use
 	branch = master
 
-[submodule "ranger-devicons"]
-	path = .config/ranger/plugins/ranger_devicons
-	url = https://github.com/alexanderjeurissen/ranger_devicons
-	branch = master
 [submodule "whitesur-kde"]
 	path = whitesur-kde
 	url = https://github.com/vinceliuice/WhiteSur-kde.git
+
 [submodule "whitesur-icon-theme"]
 	path = whitesur-icon-theme
 	url = https://github.com/vinceliuice/WhiteSur-icon-theme.git

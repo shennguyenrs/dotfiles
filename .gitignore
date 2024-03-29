@@ -1,3 +1,4 @@
-.zcompdump
 __pycache__/
+
+.zcompdump
 *.log
