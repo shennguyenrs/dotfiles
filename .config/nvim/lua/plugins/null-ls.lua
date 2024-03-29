@@ -27,6 +27,7 @@ return {
 			builtins.code_actions.refactoring,
 			builtins.formatting.sql_formatter,
 			builtins.formatting.yapf,
+			builtins.formatting.shfmt,
 			require("none-ls.diagnostics.eslint_d"),
 		}
 
