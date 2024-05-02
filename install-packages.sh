@@ -11,12 +11,14 @@ sudo pacman -S \
 
 # Install yay packages
 yay -S \
+	rxfetch \
 	telegram-desktop-bin \
 	postman-bin visual-studio-code-bin bun-bin \
 	nvim-packer-git \
 	lazydocker-bin nvm \
 	apple-fonts \
-	ibus-bamboo-git ibus-autostart anytype-bin
+	ibus-bamboo-git ibus-autostart anytype-bin \
+	microsoft-edge-dev
 
 # Install NPM packages
 sudo npm install -g neovim pnpm
@@ -29,9 +31,8 @@ while true; do
 	y | Y)
 		echo "Running the command..."
 
-		sudo pacman -S dolphin-plugins kdeplasma-addons partitionmanager kvantum-qt5
-
-		yay -S latte-dock-git plasma5-applets-virtual-desktop-bar-git
+		sudo pacman -S dolphin-plugins kdeplasma-addons partitionmanager # kvantum-qt5
+		# yay -S latte-dock-git plasma5-applets-virtual-desktop-bar-git
 
 		echo "Finish installing packages"
 

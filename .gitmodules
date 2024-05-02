@@ -1,6 +1,6 @@
 [submodule "fast-syntax-highlighting"]
 	path = .config/zsh/zsh_plugins/fast-syntax-highlighting
-	url = https://github.com/zdharma/fast-syntax-highlighting
+	url = https://github.com/zdharma-continuum/fast-syntax-highlighting
 	branch = master
 
 [submodule "fzf-tab"]
@@ -26,7 +26,9 @@
 [submodule "whitesur-kde"]
 	path = whitesur-kde
 	url = https://github.com/vinceliuice/WhiteSur-kde.git
+	branch = master
 
 [submodule "whitesur-icon-theme"]
 	path = whitesur-icon-theme
 	url = https://github.com/vinceliuice/WhiteSur-icon-theme.git
+	branch = master
