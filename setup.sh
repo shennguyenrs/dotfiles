@@ -4,11 +4,9 @@
 git submodule init
 git submodule update
 
-# Install packer on new system
-
 # Directories to installed on machine
-config=( .config )
-global=( git tmux jetbrains )
+config=(.config)
+global=(git tmux jetbrains)
 
 # Run Stow command with location and directories
 stowit() {
@@ -32,6 +30,18 @@ for dir in ${global[@]}; do
 	stowit $HOME $dir
 done
 
+echo "---> Update bat themes"
+bat cache --build
+
+echo "---> Install WhiteSur KDE theme"
+cd ./whitesur-kde
+sh ./install.sh
+cd ..
+
+echo "---> Install WhiteSur Icons"
+cd ./whitesur-icon-theme
+sh ./install.sh
+cd ..
+
 echo ""
 echo "### ALL DONE ###"
-

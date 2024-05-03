@@ -5,16 +5,15 @@ sudo pacman -S \
 	stow btop bat mpv eza lf highlight kitty starship rclone zsh \
 	chromium vivaldi vivaldi-ffmpeg-codecs firefox-developer-edition \
 	neovim fzf fd ripgrep nodejs npm luarocks xclip python-pynvim python-pip \
-	lazygit docker docker-compose docker-buildx \
+	lazygit docker docker-compose docker-buildx go \
 	ttf-firacode-nerd noto-fonts-cjk noto-fonts-emoji ttf-jetbrains-mono-nerd \
-	qbittorrent yt-dlp calibre
+	qbittorrent yt-dlp calibre gparted
 
 # Install yay packages
 yay -S \
-	rxfetch \
+	rxfetch nb-git \
 	telegram-desktop-bin \
 	postman-bin visual-studio-code-bin bun-bin \
-	nvim-packer-git \
 	lazydocker-bin nvm \
 	apple-fonts \
 	anytype-bin microsoft-edge-dev-bin
@@ -30,7 +29,7 @@ while true; do
 	y | Y)
 		echo "Running the command..."
 
-		sudo pacman -S dolphin-plugins kdeplasma-addons partitionmanager
+		sudo pacman -S dolphin-plugins kdeplasma-addons
 
 		echo "Finish installing packages"
 
