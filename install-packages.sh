@@ -17,8 +17,7 @@ yay -S \
 	nvim-packer-git \
 	lazydocker-bin nvm \
 	apple-fonts \
-	ibus-bamboo-git ibus-autostart anytype-bin \
-	microsoft-edge-dev
+	anytype-bin microsoft-edge-dev-bin
 
 # Install NPM packages
 sudo npm install -g neovim pnpm
@@ -31,8 +30,7 @@ while true; do
 	y | Y)
 		echo "Running the command..."
 
-		sudo pacman -S dolphin-plugins kdeplasma-addons partitionmanager # kvantum-qt5
-		# yay -S latte-dock-git plasma5-applets-virtual-desktop-bar-git
+		sudo pacman -S dolphin-plugins kdeplasma-addons partitionmanager
 
 		echo "Finish installing packages"
 
