@@ -7,7 +7,8 @@ sudo pacman -S \
 	neovim fzf fd ripgrep nodejs npm luarocks xclip python-pynvim python-pip \
 	lazygit docker docker-compose docker-buildx go \
 	ttf-firacode-nerd noto-fonts-cjk noto-fonts-emoji ttf-jetbrains-mono-nerd \
-	qbittorrent yt-dlp calibre gparted
+	qbittorrent yt-dlp calibre gparted \
+	fcitx5 fcitx5-configtool fcitx5-gtk fcitx5-qt fcitx5-unikey
 
 # Install yay packages
 yay -S \
