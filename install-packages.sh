@@ -2,7 +2,7 @@
 
 # Install packages
 sudo pacman -S \
-	stow btop bat mpv eza lf highlight kitty starship rclone zsh \
+	stow btop bat mpv eza lf highlight kitty starship rclone zsh jq \
 	chromium vivaldi vivaldi-ffmpeg-codecs firefox-developer-edition \
 	neovim fzf fd ripgrep nodejs npm luarocks xclip python-pynvim python-pip \
 	lazygit docker docker-compose docker-buildx go \
