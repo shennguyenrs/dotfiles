@@ -27,7 +27,6 @@ export ZDOTDIR="${XDG_CONFIG_HOME:-$HOME/.config}/zsh"
 export EDITOR=/usr/bin/nvim
 export BROWSER=/usr/bin/vivaldi
 export DOT=
-export NB_DIR=
 
 # PATH
 export PATH=$PATH:"$HOME/.local/bin"

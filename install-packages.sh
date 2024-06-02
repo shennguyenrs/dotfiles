@@ -12,7 +12,7 @@ sudo pacman -S \
 
 # Install yay packages
 yay -S \
-	rxfetch nb-git \
+	rxfetch \
 	telegram-desktop-bin \
 	postman-bin visual-studio-code-bin bun-bin \
 	lazydocker-bin nvm \
