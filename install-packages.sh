@@ -17,7 +17,7 @@ yay -S \
 	postman-bin visual-studio-code-bin bun-bin \
 	lazydocker-bin nvm \
 	apple-fonts \
-	anytype-bin microsoft-edge-dev-bin
+	microsoft-edge-dev-bin
 
 # Install NPM packages
 sudo npm install -g neovim pnpm
