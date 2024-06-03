@@ -4,7 +4,7 @@ eval "$(starship init zsh)"
 # History in cache directory
 HISTFILE=$HOME/.cache/.zsh_history
 HISTSIZE=10000
-SAVEHIST=$HISTSIZE
+SAVEHIST=10000
 
 setopt hist_ignore_all_dups
 setopt hist_reduce_blanks

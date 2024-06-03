@@ -2,23 +2,22 @@
 
 # Install packages
 sudo pacman -S \
-	stow btop bat mpv eza lf highlight kitty starship rclone zsh \
+	stow btop bat mpv eza lf highlight kitty starship rclone zsh jq \
 	chromium vivaldi vivaldi-ffmpeg-codecs firefox-developer-edition \
 	neovim fzf fd ripgrep nodejs npm luarocks xclip python-pynvim python-pip \
-	lazygit docker docker-compose docker-buildx \
+	lazygit docker docker-compose docker-buildx go \
 	ttf-firacode-nerd noto-fonts-cjk noto-fonts-emoji ttf-jetbrains-mono-nerd \
-	qbittorrent yt-dlp calibre
+	qbittorrent yt-dlp calibre gparted \
+	fcitx5 fcitx5-configtool fcitx5-gtk fcitx5-qt fcitx5-unikey
 
 # Install yay packages
 yay -S \
 	rxfetch \
 	telegram-desktop-bin \
 	postman-bin visual-studio-code-bin bun-bin \
-	nvim-packer-git \
 	lazydocker-bin nvm \
 	apple-fonts \
-	ibus-bamboo-git ibus-autostart anytype-bin \
-	microsoft-edge-dev
+	microsoft-edge-dev-bin
 
 # Install NPM packages
 sudo npm install -g neovim pnpm
@@ -31,8 +30,7 @@ while true; do
 	y | Y)
 		echo "Running the command..."
 
-		sudo pacman -S dolphin-plugins kdeplasma-addons partitionmanager # kvantum-qt5
-		# yay -S latte-dock-git plasma5-applets-virtual-desktop-bar-git
+		sudo pacman -S dolphin-plugins kdeplasma-addons
 
 		echo "Finish installing packages"
 
