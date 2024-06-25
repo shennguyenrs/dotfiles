@@ -1,0 +1,27 @@
+model: groq:gemma-7b-it
+save: true
+keybinding: vi
+wrap_code: true
+save_session: true
+highlight: true
+
+clients:
+  - type: openai-compatible
+    name: groq
+    api_base: https://api.groq.com/openai/v1
+  - type: openai
+    api_base: https://api.openai.com/v1
+  - type: claude
+  - type: gemini
+    patches:
+      ".*":
+        chat_completions_body:
+          safetySettings:
+            - category: HARM_CATEGORY_HARASSMENT
+              threshold: BLOCK_NONE
+            - category: HARM_CATEGORY_HATE_SPEECH
+              threshold: BLOCK_NONE
+            - category: HARM_CATEGORY_SEXUALLY_EXPLICIT
+              threshold: BLOCK_NONE
+            - category: HARM_CATEGORY_DANGEROUS_CONTENT
+              threshold: BLOCK_NONE
