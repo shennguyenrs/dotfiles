@@ -44,6 +44,7 @@ return {
 		vim.cmd([[
       let g:codeium_filetypes = {
         \ "markdown": v:false,
+        \ "zsh": v:false,
       \ }
     ]])
 	end,
