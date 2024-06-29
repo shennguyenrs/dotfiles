@@ -2,3 +2,5 @@ __pycache__/
 
 .zcompdump
 *.log
+
+.config/aichat/messages.md

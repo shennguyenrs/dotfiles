@@ -1,4 +1,4 @@
-model: groq:gemma-7b-it
+model: groq:llama3-8b-8192
 save: true
 keybinding: vi
 wrap_code: true
