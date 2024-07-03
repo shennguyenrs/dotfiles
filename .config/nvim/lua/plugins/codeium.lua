@@ -46,6 +46,7 @@ return {
         \ "markdown": v:false,
         \ "zsh": v:false,
         \ "json": v:false,
+        \ "sh": v:false,
       \ }
     ]])
   end,
