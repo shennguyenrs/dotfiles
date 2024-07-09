@@ -24,7 +24,6 @@ return {
 			builtins.formatting.stylua,
 			builtins.formatting.goimports,
 			builtins.code_actions.gitsigns,
-			builtins.code_actions.refactoring,
 			builtins.formatting.sql_formatter,
 			builtins.formatting.yapf,
 			builtins.formatting.shfmt,
