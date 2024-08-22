@@ -34,14 +34,33 @@ echo "---> Update bat themes"
 bat cache --build
 
 echo "---> Install WhiteSur KDE theme"
-cd ./whitesur-kde
-sh ./install.sh
-cd ..
+while true; do
+	read -p "Do you want to install WhiteSur KDE theme? [y/n] " answer
+	case $answer in
+	y | Y)
+		cd ./whitesur-kde
+		sh ./install.sh
+		cd ..
+		break
+		;;
+	n | N) break ;;
+	*) echo "Please answer yes or no." ;;
+	esac
+done
 
 echo "---> Install WhiteSur Icons"
-cd ./whitesur-icon-theme
-sh ./install.sh
-cd ..
+while true; do
+	read -p "Do you want to install WhiteSur Icons? [y/n] " answer
+	case $answer in
+	y | Y)
+		cd ./whitesur-icon-theme
+		sh ./install.sh
+		cd ..
+		break
+		;;
+	n | N) break ;;
+	*) echo "Please answer yes or no." ;;
+	esac
+done
 
-echo ""
 echo "### ALL DONE ###"
