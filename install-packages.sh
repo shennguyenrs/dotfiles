@@ -5,7 +5,7 @@ sudo pacman -S \
 	stow btop bat mpv eza lf highlight kitty starship rclone zsh jq \
 	chromium vivaldi vivaldi-ffmpeg-codecs firefox-developer-edition \
 	neovim fzf fd ripgrep nodejs npm luarocks xclip python-pynvim python-pip \
-	lazygit docker docker-compose docker-buildx go \
+	lazygit docker docker-compose docker-buildx go rustup \
 	ttf-firacode-nerd noto-fonts-cjk noto-fonts-emoji ttf-jetbrains-mono-nerd \
 	qbittorrent yt-dlp calibre gparted \
 	fcitx5 fcitx5-configtool fcitx5-gtk fcitx5-qt fcitx5-unikey
@@ -13,8 +13,8 @@ sudo pacman -S \
 # Install yay packages
 yay -S \
 	rxfetch aichat ngrok cloudflared-bin msty-bin telegram-desktop-bin \
-	postman-bin visual-studio-code-bin bun-bin cursor-appimage \
-	lazydocker-bin nvm \
+	postman-bin visual-studio-code-bin bun-bin \
+	lazydocker-bin nvm zed-preview-bin \
 	apple-fonts \
 	microsoft-edge-dev-bin
 
