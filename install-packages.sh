@@ -2,7 +2,7 @@
 
 # Install packages
 sudo pacman -S \
-	stow btop bat mpv eza lf highlight kitty starship rclone zsh jq \
+	stow btop bat mpv eza yazi highlight kitty starship rclone zsh jq \
 	chromium vivaldi vivaldi-ffmpeg-codecs firefox-developer-edition \
 	neovim fzf fd ripgrep nodejs npm luarocks xclip python-pynvim python-pip \
 	lazygit docker docker-compose docker-buildx go rustup \
@@ -12,14 +12,14 @@ sudo pacman -S \
 
 # Install yay packages
 yay -S \
-	rxfetch aichat ngrok cloudflared-bin \
+	rxfetch aichat aider-chat ngrok cloudflared-bin \
 	postman-bin visual-studio-code-bin bun-bin \
 	lazydocker-bin nvm zed-preview-bin \
 	apple-fonts \
 	microsoft-edge-dev-bin
 
 # Install NPM packages
-sudo npm install -g neovim pnpm
+sudo npm install -g neovim pnpm vercel
 
 # KDE
 while true; do
