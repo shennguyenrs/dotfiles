@@ -10,7 +10,7 @@ return {
         "cssls",
         "gopls",
         "html",
-        "tsserver",
+        "ts_ls",
         "pyright",
         "svelte",
         "tailwindcss",
