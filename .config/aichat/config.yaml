@@ -1,9 +1,11 @@
-model: groq:llama-3.1-70b-versatile
+model: groq:llama-3.2-90b-text-preview
 save: true
 keybinding: vi
 wrap_code: true
 save_session: true
 highlight: true
+temperature: 0.8
+top_p: 0.95
 
 clients:
   - type: openai-compatible
