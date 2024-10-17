@@ -15,8 +15,7 @@ yay -S \
 	rxfetch aichat aider-chat ngrok cloudflared-bin \
 	postman-bin visual-studio-code-bin bun-bin \
 	lazydocker-bin nvm zed-preview-bin \
-	apple-fonts \
-	microsoft-edge-dev-bin
+	apple-fonts
 
 # Install NPM packages
 sudo npm install -g neovim pnpm vercel
