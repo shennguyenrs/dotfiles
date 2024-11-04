@@ -12,7 +12,7 @@ sudo pacman -S \
 
 # Install yay packages
 yay -S \
-	rxfetch aichat aider-chat ngrok cloudflared-bin \
+	rxfetch ngrok cloudflared-bin \
 	postman-bin visual-studio-code-bin bun-bin \
 	lazydocker-bin nvm zed-preview-bin \
 	apple-fonts
