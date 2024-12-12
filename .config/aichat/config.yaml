@@ -1,4 +1,4 @@
-model: groq:llama-3.2-90b-vision-preview
+model: groq:llama-3.3-70b-versatile
 save: true
 keybinding: vi
 wrap_code: true
