@@ -17,6 +17,10 @@ clients:
     models:
       - name: anthropic/claude-3-5-haiku
       - name: anthropic/claude-3.5-sonnet
+      - name: anthropic/claude-3.7-sonnet
+      - name: anthropic/claude-3.7-sonnet:thinking
+      - name: deepseek/deepseek-r1:free
+      - name: deepseek/deepseek-r1
   - type: openai
   - type: openai-compatible
     name: litellm
