@@ -27,7 +27,7 @@ return {
 			builtins.formatting.sql_formatter,
 			builtins.formatting.yapf,
 			builtins.formatting.shfmt,
-			require("none-ls.diagnostics.eslint_d"),
+			-- require("none-ls.diagnostics.eslint_d"),
 		}
 
 		null_ls.setup({
