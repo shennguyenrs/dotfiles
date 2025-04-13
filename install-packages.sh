@@ -8,7 +8,7 @@ sudo pacman -S \
 	lazygit docker docker-compose docker-buildx go rustup \
 	ttf-firacode-nerd noto-fonts-cjk noto-fonts-emoji ttf-jetbrains-mono-nerd \
 	qbittorrent yt-dlp calibre gparted \
-	fcitx5 fcitx5-configtool fcitx5-gtk fcitx5-qt fcitx5-unikey
+	fcitx5 fcitx5-configtool fcitx5-gtk fcitx5-qt fcitx5-unikey uv
 
 # Install yay packages
 yay -S \
