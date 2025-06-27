@@ -1,11 +1,11 @@
 return {
-  "kyazdani42/nvim-web-devicons",
+  { "nvim-tree/nvim-web-devicons", opts = {} },
   -- Load with lazy
-  { "dracula/vim",           name = "dracula",      lazy = true },
-  { "catppuccin/nvim",       name = "catppuccin",   lazy = true },
-  { "folke/tokyonight.nvim", name = "tokyonight",   lazy = true },
+  { "dracula/vim",                 name = "dracula",      lazy = true },
+  { "catppuccin/nvim",             name = "catppuccin",   lazy = true },
+  { "folke/tokyonight.nvim",       name = "tokyonight",   lazy = true },
   -- Load with events
-  { "windwp/nvim-autopairs", event = "InsertEnter", opts = {} },
+  { "windwp/nvim-autopairs",       event = "InsertEnter", opts = {} },
   {
     "kylechui/nvim-surround",
     version = "*",
