@@ -1,4 +1,5 @@
 -- Install some source from Manson to support for linting and formatting
+-- biome
 -- prettierd
 -- eslint_d
 -- stylua
@@ -19,6 +20,7 @@ return {
 
 		local sources = {
 			builtins.formatting.prettierd,
+			-- builtins.formatting.biome,
 			builtins.formatting.gofumpt,
 			builtins.diagnostics.sqlfluff.with({ extra_args = { "--dialect", "postgres" } }),
 			builtins.formatting.stylua,

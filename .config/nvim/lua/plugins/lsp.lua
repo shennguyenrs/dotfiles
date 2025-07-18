@@ -306,5 +306,8 @@ return {
 
 		-- eslint
 		lspconfig.eslint.setup({})
+
+		-- biome
+		-- lspconfig.biome.setup({})
 	end,
 }
