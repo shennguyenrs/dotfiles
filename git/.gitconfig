@@ -16,6 +16,7 @@
 	sw = switch
 	rb = rebase
 	cp = cherry-pick
+  wt = worktree
 [safe]
 	directory = /opt/flutter
 [core]
