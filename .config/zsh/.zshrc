@@ -24,6 +24,9 @@ zmodload zsh/complist
 compinit
 _comp_options+=(globdots)		# Include hidden files.
 
+# Zoxide
+eval "$(zoxide init zsh)"
+
 # Vim mode
 bindkey -v
 # export KEYTIMEOUT=1
@@ -62,7 +65,6 @@ preexec() { echo -ne '\e[5 q' ;} # Use beam shape cursor for each new prompt.
 [ -f "$DOT/.config/zsh/zsh_plugins/fzf-tab/fzf-tab.plugin.zsh" ] && source $DOT/.config/zsh/zsh_plugins/fzf-tab/fzf-tab.plugin.zsh
 [ -f "$DOT/.config/zsh/zsh_plugins/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh" ] && source $DOT/.config/zsh/zsh_plugins/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh
 [ -f "$DOT/.config/zsh/zsh_plugins/zsh-autosuggestions/zsh-autosuggestions.plugin.zsh" ] && source $DOT/.config/zsh/zsh_plugins/zsh-autosuggestions/zsh-autosuggestions.plugin.zsh
-[ -f "$DOT/.config/zsh/zsh_plugins/zsh-you-should-use/you-should-use.plugin.zsh" ] && source $DOT/.config/zsh/zsh_plugins/zsh-you-should-use/you-should-use.plugin.zsh
 
 # Aliasrc
 [ -f "$DOT/.config/zsh/aliasrc" ] && source $DOT/.config/zsh/aliasrc

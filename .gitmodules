@@ -18,11 +18,6 @@
 	url = https://github.com/xPMo/zsh-ls-colors
 	branch = master
 
-[submodule "zsh-you-should-use"]
-	path = .config/zsh/zsh_plugins/zsh-you-should-use
-	url = https://github.com/michaelaquilina/zsh-you-should-use
-	branch = master
-
 [submodule "whitesur-kde"]
 	path = whitesur-kde
 	url = https://github.com/vinceliuice/WhiteSur-kde.git
