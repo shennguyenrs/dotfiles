@@ -20,7 +20,6 @@ return {
 
 		local sources = {
 			builtins.formatting.prettierd,
-			-- builtins.formatting.biome,
 			builtins.formatting.gofumpt,
 			builtins.diagnostics.sqlfluff.with({ extra_args = { "--dialect", "postgres" } }),
 			builtins.formatting.stylua,
@@ -29,7 +28,6 @@ return {
 			builtins.formatting.sql_formatter,
 			builtins.formatting.yapf,
 			builtins.formatting.shfmt,
-			-- require("none-ls.diagnostics.eslint_d"),
 		}
 
 		null_ls.setup({
@@ -40,7 +38,7 @@ return {
 						group = vim.api.nvim_create_augroup("Format", { clear = true }),
 						buffer = bufnr,
 						callback = function()
-							vim.lsp.buf.format({ async = false })
+							vim.lsp.buf.format()
 						end,
 					})
 				end
