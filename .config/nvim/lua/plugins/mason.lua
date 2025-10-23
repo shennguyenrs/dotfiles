@@ -9,7 +9,7 @@ return {
 				"bashls",
 				"biome",
 				"cssls",
-				"dartls",
+				-- "dartls",
 				"docker_compose_language_service",
 				"dockerls",
 				"emmet_ls",
