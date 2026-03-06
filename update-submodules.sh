@@ -8,7 +8,7 @@ cd ..
 echo "Done"
 
 echo "---> Updating whitesur-icon-theme submodule..."
-cd ./whitesur-icon-theme/ 
+cd ./whitesur-icon-theme/
 git fetch origin master
 git pull origin master
 cd ..
@@ -39,13 +39,6 @@ echo "Done"
 
 echo "Updating zsh-ls-colors..."
 cd ./zsh-ls-colors
-git fetch origin master
-git pull origin master
-cd ..
-echo "Done"
-
-echo "Updating zsh-you-should-use..."
-cd ./zsh-you-should-use
 git fetch origin master
 git pull origin master
 cd ..
