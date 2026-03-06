@@ -64,7 +64,7 @@ return {
 		local servers = {
 			"astro",
 			"bashls",
-			"biome",
+			-- "biome",
 			"cssls",
 			-- "dartls",
 			"docker_compose_language_service",

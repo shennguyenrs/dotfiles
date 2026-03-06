@@ -3,7 +3,7 @@ return {
 	event = "BufEnter",
 	keys = {
 		{
-			"<C-g>",
+			"<A-l>",
 			function()
 				return vim.fn["codeium#Accept"]()
 			end,
@@ -12,7 +12,7 @@ return {
 			silent = true,
 		},
 		{
-			"<C-;>",
+			"<A-;>",
 			function()
 				return vim.fn["codeium#CycleCompletions"](1)
 			end,
@@ -21,7 +21,7 @@ return {
 			silent = true,
 		},
 		{
-			"<C-,>",
+			"<A-,>",
 			function()
 				return vim.fn["codeium#CycleCompletions"](-1)
 			end,
@@ -30,7 +30,7 @@ return {
 			silent = true,
 		},
 		{
-			"<C-x>",
+			"<A-x>",
 			function()
 				return vim.fn["codeium#Clear"]()
 			end,
