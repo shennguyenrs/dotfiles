@@ -1,0 +1,39 @@
+{
+  "general": {
+    "preferredEditor": "vscode",
+    "previewFeatures": true,
+    "sessionRetention": {
+      "warningAcknowledged": true,
+      "enabled": true,
+      "maxAge": "30d"
+    }
+  },
+  "security": {
+    "auth": {
+      "selectedType": "oauth-personal"
+    }
+  },
+  "ui": {
+    "theme": "GitHub"
+  },
+  "mcpServers": {
+    "chrome-devtools": {
+      "command": "npx",
+      "args": [
+        "chrome-devtools-mcp@latest"
+      ]
+    },
+    "notebooklm": {
+      "command": "notebooklm-mcp",
+      "args": [],
+      "trust": true
+    }
+  },
+  "model": {
+    "name": "auto-gemini-3"
+  },
+  "ide": {
+    "hasSeenNudge": true,
+    "enabled": true
+  }
+}
