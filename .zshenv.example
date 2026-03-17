@@ -1,0 +1,16 @@
+export ZDOTDIR="${XDG_CONFIG_HOME:-$HOME/.config}/zsh"
+export EDITOR=/usr/bin/nvim
+export BROWSER=/usr/bin/vivaldi
+export DOT="$HOME/local_codes/dotfiles"
+
+# PATH
+export PATH=$PATH:"$HOME/.local/bin"
+
+# API Keys
+export OPENROUTER_API_KEY=
+export GEMINI_API_KEY=
+export GOOGLE_AI_API_KEY=
+
+# OpenRouter configuration for Claude Code
+export ANTHROPIC_BASE_URL="https://openrouter.ai/api/v1"
+export ANTHROPIC_API_KEY=
