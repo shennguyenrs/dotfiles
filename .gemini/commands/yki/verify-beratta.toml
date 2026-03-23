@@ -50,9 +50,8 @@ Return your evaluation in exactly this JSON format, no extra text:
     "short bullet point about how to improve (e.g., focus on V2 rule, use more connectors)",
     "another improvement point"
   ],
-  "suggested_model_phrases": [
-    "Provide 2-3 advanced phrases or connectors (B1-B2 level) the candidate could have used in this specific context to improve their score."
-  ]
+  "suggested_model_answer": 
+    "Write a slightly improved version of the candidate's answer that would clearly reach solid B1–B2 level, keeping the same meaning and situation."
 }
 
 Rules:

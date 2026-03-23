@@ -40,10 +40,10 @@ Return your evaluation in exactly this JSON format, no extra text:
 {
   "overall_level": "B1" | "B2" | "Below B1" | "Above B2",
   "score_task_fulfilment": 1-5,
-  "score_comprehensibility": 1-5,
-  "score_fluency": 1-5,
-  "score_range_accuracy": 1-5,
-  "score_register_politeness": 1-5,
+  "score_coherence_cohesion": 1-5,
+  "score_vocabulary": 1-5,
+  "score_grammar": 1-5,
+  "score_fluency_comprehensibility": 1-5,
   "strengths": [
     "short bullet point about a strength",
     "another strength"
