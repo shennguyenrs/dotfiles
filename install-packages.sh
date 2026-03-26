@@ -2,23 +2,24 @@
 
 # Install packages
 sudo pacman -S \
-	stow btop bat mpv eza yazi highlight kitty starship rclone zsh jq \
+	stow btop bat mpv lua luarocks yazi eza highlight kitty starship rclone zsh jq zoxide \
 	chromium vivaldi vivaldi-ffmpeg-codecs firefox-developer-edition \
 	neovim fzf fd ripgrep nodejs npm luarocks xclip python-pynvim python-pip \
 	lazygit docker docker-compose docker-buildx go rustup \
 	ttf-firacode-nerd noto-fonts-cjk noto-fonts-emoji ttf-jetbrains-mono-nerd \
-	qbittorrent yt-dlp calibre gparted \
-	fcitx5 fcitx5-configtool fcitx5-gtk fcitx5-qt fcitx5-unikey uv
+	qbittorrent yt-dlp gparted \
+	fcitx5 fcitx5-configtool fcitx5-gtk fcitx5-qt fcitx5-unikey uv bun
 
 # Install yay packages
 yay -S \
-	rxfetch ngrok cloudflared-bin \
-	postman-bin visual-studio-code-bin bun-bin \
-	lazydocker-bin nvm zed-preview-bin \
-	apple-fonts
+	rxfetch visual-studio-code-bin microsoft-edge-stable-bin \
+	lazydocker-bin nvm zed-preview-bin apple-fonts
 
 # Install NPM packages
 sudo npm install -g neovim pnpm vercel
+
+# Remove some default packages
+sudo pacman -Rns firefox
 
 # KDE
 while true; do
