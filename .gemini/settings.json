@@ -82,9 +82,5 @@
   },
   "model": {
     "name": "auto-gemini-3"
-  },
-  "ide": {
-    "hasSeenNudge": true,
-    "enabled": true
   }
 }
