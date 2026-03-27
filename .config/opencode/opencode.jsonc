@@ -3,8 +3,14 @@
   "model": "openrouter/google/gemini-2.5-pro",
   "formatter": {
     "prettier": {
-      "disabled": true
-    }
+      "disabled": true,
+    },
   },
-  "plugin": ["opencode-antigravity-auth@beta"]
+  "mcp": {
+    "notebooklm-mcp": {
+      "type": "local",
+      "command": ["notebooklm-mcp"],
+      "enabled": true,
+    },
+  },
 }
