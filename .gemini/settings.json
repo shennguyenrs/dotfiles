@@ -8,7 +8,8 @@
       "maxAge": "30d",
       "maxCount": 50,
       "minRetention": "7d"
-    }
+    },
+    "enableAutoUpdate": false
   },
   "security": {
     "auth": {
@@ -21,7 +22,6 @@
       "items": [
         "workspace",
         "git-branch",
-        "sandbox",
         "model-name",
         "quota",
         "context-used",
@@ -29,58 +29,7 @@
       ]
     }
   },
-  "mcpServers": {
-    "chrome-devtools": {
-      "command": "npx",
-      "args": [
-        "chrome-devtools-mcp@latest"
-      ]
-    },
-    "notebooklm": {
-      "command": "notebooklm-mcp",
-      "args": [],
-      "trust": true
-    },
-    "context-mode": {
-      "command": "context-mode"
-    }
-  },
-  "hooks": {
-    "BeforeTool": [
-      {
-        "matcher": "",
-        "hooks": [
-          {
-            "type": "command",
-            "command": "context-mode hook gemini-cli beforetool"
-          }
-        ]
-      }
-    ],
-    "AfterTool": [
-      {
-        "matcher": "",
-        "hooks": [
-          {
-            "type": "command",
-            "command": "context-mode hook gemini-cli aftertool"
-          }
-        ]
-      }
-    ],
-    "SessionStart": [
-      {
-        "matcher": "",
-        "hooks": [
-          {
-            "type": "command",
-            "command": "context-mode hook gemini-cli sessionstart"
-          }
-        ]
-      }
-    ]
-  },
   "model": {
-    "name": "auto-gemini-3"
+    "name": "gemini-3-flash-preview"
   }
 }
