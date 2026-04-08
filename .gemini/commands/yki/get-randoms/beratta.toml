@@ -1,11 +1,11 @@
-description="Query a random berätta question in a random topics using notebooklm mcp"
+description="Query a random berätta topic in a random topics using notebooklm mcp"
 prompt="""
-# Task: Query a random berätta question
+# Task: Query a random berätta topic
 
-You need to write a query to Notebooklm mcp server to get a random berätta question in a random topics of YKI Preparation notebook. 
+You need to write a query to Notebooklm mcp server to get a random berätta topic and the following guiding statements and questions in a random topics of YKI Preparation notebook. 
 
 After you got it, return to the user:
-- Only original question in Swedish. 
+- Only original topic and the following guiding statements and questions in Swedish. 
 - No translation in English. 
 - No suggestions for answer.
 """

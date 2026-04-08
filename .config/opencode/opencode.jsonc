@@ -6,11 +6,4 @@
       "disabled": true,
     },
   },
-  "mcp": {
-    "notebooklm-mcp": {
-      "type": "local",
-      "command": ["notebooklm-mcp"],
-      "enabled": true,
-    },
-  },
 }
