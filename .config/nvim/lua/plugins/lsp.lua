@@ -11,29 +11,21 @@ return {
 	},
 	config = function()
 		local keymap = vim.keymap
-
 		local opts = { noremap = true, silent = true }
 
 		keymap.set("n", "<space>e", vim.diagnostic.open_float, opts)
-		keymap.set("n", "[d", vim.diagnostic.goto_prev, opts)
-		keymap.set("n", "]d", vim.diagnostic.goto_next, opts)
 		keymap.set("n", "<space>q", vim.diagnostic.setloclist, opts)
 
 		local common_attach = function(client, bufnr)
-			vim.api.nvim_buf_set_option(bufnr, "omnifunc", "v:lua.vim.lsp.omnifunc")
-
 			-- Attach lsp_signature
 			require("lsp_signature").on_attach()
 
-			-- Mappings
+			-- Custom Leader Mappings (Defaults like K, gd, grr, grn, gra, [d, ]d are kept as built-in)
 			local bufopts = { noremap = true, silent = true, buffer = bufnr }
 			local lspbuf = vim.lsp.buf
 
 			keymap.set("n", "gD", lspbuf.declaration, bufopts)
-			keymap.set("n", "gd", lspbuf.definition, bufopts)
-			keymap.set("n", "K", lspbuf.hover, bufopts)
 			keymap.set("n", "gi", lspbuf.implementation, bufopts)
-			keymap.set("n", "<C-k>", lspbuf.signature_help, bufopts)
 			keymap.set("n", "<space>wa", lspbuf.add_workspace_folder, bufopts)
 			keymap.set("n", "<space>wr", lspbuf.remove_workspace_folder, bufopts)
 			keymap.set("n", "<space>wl", function()
@@ -42,7 +34,6 @@ return {
 			keymap.set("n", "<space>D", lspbuf.type_definition, bufopts)
 			keymap.set("n", "<space>rn", lspbuf.rename, bufopts)
 			keymap.set({ "n", "x" }, "<space>ca", lspbuf.code_action, bufopts)
-			keymap.set("n", "gr", lspbuf.references, bufopts)
 			keymap.set("n", "<space>f", function()
 				lspbuf.format()
 			end)
@@ -64,9 +55,7 @@ return {
 		local servers = {
 			"astro",
 			"bashls",
-			-- "biome",
 			"cssls",
-			-- "dartls",
 			"docker_compose_language_service",
 			"dockerls",
 			"emmet_ls",
@@ -86,6 +75,7 @@ return {
 
 		vim.lsp.config("*", {
 			on_attach = common_attach,
+			capabilities = require("blink.cmp").get_lsp_capabilities(),
 		})
 
 		for _, server_name in ipairs(servers) do

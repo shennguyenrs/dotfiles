@@ -1,12 +1,9 @@
 return {
 	"nvim-treesitter/nvim-treesitter",
+	branch = "main",
 	build = ":TSUpdate",
-	opts = {
-		highlight = { enable = true },
-		-- autotag = { enable = true },
-		matchup = { enable = true },
-		auto_install = true,
-		ensure_installed = {
+	config = function()
+		require("nvim-treesitter").install({
 			"bash",
 			"css",
 			"scss",
@@ -22,25 +19,17 @@ return {
 			"yaml",
 			"dockerfile",
 			"markdown",
+			"markdown_inline",
 			"sql",
 			"svelte",
 			"vim",
-		},
-	},
-	-- @param opts TSConfig
-	config = function(_, opts)
-		if type(opts.ensure_installed) == "table" then
-			---@type table<string, boolean>
-			local added = {}
-			opts.ensure_installed = vim.tbl_filter(function(lang)
-				if added[lang] then
-					return false
-				end
-				added[lang] = true
-				return true
-			end, opts.ensure_installed)
-		end
+		})
 
-		require("nvim-treesitter.configs").setup(opts)
+		-- Enable syntax highlighting automatically via native Neovim API
+		vim.api.nvim_create_autocmd("FileType", {
+			callback = function()
+				pcall(vim.treesitter.start)
+			end,
+		})
 	end,
 }
