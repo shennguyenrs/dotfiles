@@ -5,7 +5,6 @@ return {
   ---@type snacks.Config
   opts = {
     picker = {},
-    lazygit = {},
     indent = {},
   },
   keys = {
@@ -29,13 +28,6 @@ return {
         Snacks.picker.grep()
       end,
       desc = "Grep",
-    },
-    {
-      "<leader>lg",
-      function()
-        Snacks.lazygit()
-      end,
-      desc = "Lazygit",
     },
     {
       "<leader>st",
