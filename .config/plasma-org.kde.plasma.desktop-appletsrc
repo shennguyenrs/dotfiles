@@ -29,7 +29,7 @@ SlidePaths=/usr/share/wallpapers/
 [Containments][1][Wallpaper][org.kde.slideshow][General]
 Blur=true
 FillMode=1
-Image=file:///home/shen/Pictures/MacOs/13-Ventura-Dark.jpg
+Image=file:///home/shen/Pictures/MacOs/10-11-6k.jpg
 SlideInterval=10800
 SlidePaths=/home/shen/Pictures/MacOs/
 
@@ -62,8 +62,8 @@ showWeekNumbers=true
 use24hFormat=2
 
 [Containments][2][Applets][21][Configuration][ConfigDialog]
-DialogHeight=630
-DialogWidth=810
+DialogHeight=575
+DialogWidth=914
 
 [Containments][2][Applets][22]
 immutability=1
@@ -82,8 +82,8 @@ immutability=1
 plugin=org.kde.plasma.kickoff
 
 [Containments][2][Applets][3][Configuration]
-popupHeight=517
-popupWidth=655
+popupHeight=518
+popupWidth=663
 
 [Containments][2][Applets][3][Configuration][General]
 favoritesPortedToKAstats=true
@@ -219,7 +219,7 @@ DialogWidth=810
 [Containments][26][Wallpaper][org.kde.slideshow][General]
 Blur=true
 FillMode=1
-Image=file:///home/shen/Pictures/MacOs/13-Ventura-Dark.jpg
+Image=file:///home/shen/Pictures/MacOs/10-12-6k.jpg
 SlideInterval=11700
 SlidePaths=/home/shen/Pictures/MacOs/
 
