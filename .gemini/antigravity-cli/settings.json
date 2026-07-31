@@ -1,0 +1,22 @@
+{
+  "model": "Claude Sonnet 4.6 (Thinking)",
+  "permissions": {
+    "allow": [
+      "mcp(context-mode/ctx_execute)",
+      "mcp(context-mode/ctx_search)",
+      "mcp(codegraph/codegraph_search)",
+      "command(git show)",
+      "command(git mv)",
+      "command(git status)",
+      "command(git add)",
+      "command(git diff)",
+      "command(git diff-tree)"
+    ]
+  },
+  "statusLine": {
+    "type": "",
+    "command": "/home/shen/local_codes/agy-statusline/statusline.sh",
+    "enabled": true
+  },
+  "useG1Credits": true
+}
