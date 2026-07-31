@@ -27,3 +27,6 @@
 	path = whitesur-icon-theme
 	url = https://github.com/vinceliuice/WhiteSur-icon-theme.git
 	branch = master
+[submodule "MacTahoe-icon-theme"]
+	path = MacTahoe-icon-theme
+	url = https://github.com/vinceliuice/MacTahoe-icon-theme.git
