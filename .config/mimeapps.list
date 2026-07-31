@@ -1,0 +1,8 @@
+[Added Associations]
+text/plain=org.kde.kwrite.desktop;
+
+[Default Applications]
+text/html=vivaldi-stable.desktop
+text/plain=org.kde.kwrite.desktop;
+x-scheme-handler/http=vivaldi-stable.desktop
+x-scheme-handler/https=vivaldi-stable.desktop
