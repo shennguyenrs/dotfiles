@@ -71,4 +71,34 @@ while true; do
 	esac
 done
 
+echo "---> Install MacTahoe Theme"
+while true; do
+	read -p "Do you want to install MacTahoe KDE theme? [y/n] " answer
+	case $answer in
+	y | Y)
+		cd ./MacTahoe-kde/
+		sh ./install.sh
+		cd ..
+		break
+		;;
+	n | N) break ;;
+	*) echo "Please answer yes or no." ;;
+	esac
+done
+
+echo "---> Install MacTahoe Icons"
+while true; do
+	read -p "Do you want to install MacTahoe Icons? [y/n] " answer
+	case $answer in
+	y | Y)
+		cd ./MacTahoe-icon-theme/
+		sh ./install.sh
+		cd ..
+		break
+		;;
+	n | N) break ;;
+	*) echo "Please answer yes or no." ;;
+	esac
+done
+
 echo "### ALL DONE ###"

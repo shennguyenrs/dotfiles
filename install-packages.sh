@@ -32,7 +32,7 @@ while true; do
   y | Y)
     echo "Running the command..."
 
-    sudo pacman -S dolphin-plugins kdeplasma-addons
+    sudo pacman -S dolphin-plugins kdeplasma-addons kvantum
 
     echo "Finish installing packages"
 
