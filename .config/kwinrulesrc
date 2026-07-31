@@ -1,0 +1,38 @@
+[60716af6-dc1f-4191-808f-d577ea1a9b89]
+size=1400,600
+
+[688c986a-1f4c-4a8b-8067-ded75e0229f7]
+Description=Application settings for vivaldi-stable
+size=1600,1000
+sizerule=3
+wmclass=vivaldi-bin vivaldi-stable
+wmclasscomplete=true
+wmclassmatch=1
+
+[8d24fdf1-48d8-4109-b3e4-9a43f27b9cfb]
+size=1600,1200
+
+[General]
+count=3
+rules=ea11cf09-cb1e-4922-be83-f3c8c6234281,688c986a-1f4c-4a8b-8067-ded75e0229f7,a93e2f02-2753-4804-858d-995f4a243bfe
+
+[a93e2f02-2753-4804-858d-995f4a243bfe]
+Description=Application settings for kitty
+size=1400,800
+sizerule=3
+wmclass=kitty
+wmclassmatch=1
+
+[c8f4b0fb-a249-47f5-8ca7-472b0f4850e0]
+size=1400,800
+
+[deec3d56-4fd5-42f6-9265-ff032d072d45]
+sizerule=3
+
+[ea11cf09-cb1e-4922-be83-f3c8c6234281]
+Description=Application settings for org.kde.dolphin
+size=1200,800
+sizerule=3
+wmclass=dolphin org.kde.dolphin
+wmclasscomplete=true
+wmclassmatch=1

@@ -21,13 +21,13 @@ IntensityAmount=0
 IntensityEffect=0
 
 [Colors:Button]
-BackgroundAlternate=137,159,202
+BackgroundAlternate=158,194,226
 BackgroundNormal=255,255,255
-DecorationFocus=87,119,180
-DecorationHover=87,119,180
-ForegroundActive=87,119,180
+DecorationFocus=117,168,214
+DecorationHover=117,168,214
+ForegroundActive=117,168,214
 ForegroundInactive=120,120,120
-ForegroundLink=63,87,131
+ForegroundLink=85,123,156
 ForegroundNegative=218,68,83
 ForegroundNeutral=246,116,0
 ForegroundNormal=36,36,36
@@ -37,11 +37,11 @@ ForegroundVisited=127,140,141
 [Colors:Complementary]
 BackgroundAlternate=66,66,66
 BackgroundNormal=51,51,51
-DecorationFocus=87,119,180
-DecorationHover=87,119,180
-ForegroundActive=87,119,180
+DecorationFocus=117,168,214
+DecorationHover=117,168,214
+ForegroundActive=117,168,214
 ForegroundInactive=120,120,120
-ForegroundLink=190,201,230
+ForegroundLink=117,168,214
 ForegroundNegative=231,76,60
 ForegroundNeutral=253,188,75
 ForegroundNormal=239,240,241
@@ -51,11 +51,11 @@ ForegroundVisited=120,120,120
 [Colors:Header]
 BackgroundAlternate=238,238,238
 BackgroundNormal=255,255,255
-DecorationFocus=87,119,180
-DecorationHover=87,119,180
-ForegroundActive=87,119,180
+DecorationFocus=117,168,214
+DecorationHover=117,168,214
+ForegroundActive=117,168,214
 ForegroundInactive=120,120,120
-ForegroundLink=63,87,131
+ForegroundLink=85,123,156
 ForegroundNegative=218,68,83
 ForegroundNeutral=246,116,0
 ForegroundNormal=36,36,36
@@ -77,13 +77,13 @@ ForegroundPositive=39,174,96
 ForegroundVisited=127,140,141
 
 [Colors:Selection]
-BackgroundAlternate=137,159,202
-BackgroundNormal=137,159,202
-DecorationFocus=87,119,180
-DecorationHover=87,119,180
-ForegroundActive=87,119,180
+BackgroundAlternate=158,194,226
+BackgroundNormal=158,194,226
+DecorationFocus=117,168,214
+DecorationHover=117,168,214
+ForegroundActive=117,168,214
 ForegroundInactive=0,0,0
-ForegroundLink=190,201,230
+ForegroundLink=200,217,237
 ForegroundNegative=218,68,83
 ForegroundNeutral=246,116,0
 ForegroundNormal=0,0,0
@@ -93,11 +93,11 @@ ForegroundVisited=127,160,239
 [Colors:Tooltip]
 BackgroundAlternate=77,77,77
 BackgroundNormal=36,36,36
-DecorationFocus=87,119,180
-DecorationHover=87,119,180
-ForegroundActive=87,119,180
+DecorationFocus=117,168,214
+DecorationHover=117,168,214
+ForegroundActive=117,168,214
 ForegroundInactive=120,120,120
-ForegroundLink=190,201,230
+ForegroundLink=117,168,214
 ForegroundNegative=218,68,83
 ForegroundNeutral=246,116,0
 ForegroundNormal=222,222,222
@@ -107,11 +107,11 @@ ForegroundVisited=127,140,141
 [Colors:View]
 BackgroundAlternate=239,239,239
 BackgroundNormal=255,255,255
-DecorationFocus=87,119,180
-DecorationHover=87,119,180
-ForegroundActive=87,119,180
+DecorationFocus=117,168,214
+DecorationHover=117,168,214
+ForegroundActive=117,168,214
 ForegroundInactive=120,120,120
-ForegroundLink=63,87,131
+ForegroundLink=85,123,156
 ForegroundNegative=218,68,83
 ForegroundNeutral=246,116,0
 ForegroundNormal=36,36,36
@@ -121,11 +121,11 @@ ForegroundVisited=127,140,141
 [Colors:Window]
 BackgroundAlternate=238,238,238
 BackgroundNormal=255,255,255
-DecorationFocus=87,119,180
-DecorationHover=87,119,180
-ForegroundActive=87,119,180
+DecorationFocus=117,168,214
+DecorationHover=117,168,214
+ForegroundActive=117,168,214
 ForegroundInactive=120,120,120
-ForegroundLink=63,87,131
+ForegroundLink=85,123,156
 ForegroundNegative=218,68,83
 ForegroundNeutral=246,116,0
 ForegroundNormal=36,36,36
@@ -133,7 +133,7 @@ ForegroundPositive=39,174,96
 ForegroundVisited=127,140,141
 
 [General]
-AccentColor=87,119,180
+AccentColor=117,168,214
 BrowserApplication=vivaldi-stable.desktop
 ColorSchemeHash=cb72df48cef8a4e0e4c3952a3ca39f014df79189
 XftAntialias=true
@@ -149,6 +149,7 @@ toolBarFont=SF Pro Display,10,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
 Theme=MacTahoe-light
 
 [KDE]
+AnimationDurationFactor=0.5
 LookAndFeelPackage=org.kde.breeze.desktop
 ShowDeleteCommand=false
 contrast=4
@@ -169,12 +170,12 @@ Sort directories first=true
 Sort hidden files last=false
 Sort reversed=true
 Speedbar Width=100
-View Style=Detail
+View Style=DetailTree
 
 [PreviewSettings]
 EnableRemoteFolderThumbnail=false
 MaximumRemoteSize=0
-MaximumSize=1048576
+MaximumSize=10485760
 
 [WM]
 activeBackground=255,255,255

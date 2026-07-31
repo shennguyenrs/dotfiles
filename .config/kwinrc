@@ -30,6 +30,10 @@ tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"wi
 padding=4
 tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
 
+[Tiling][154b674c-671a-4413-9b28-5d6063e0b29d][b22912c8-e877-411d-bcd7-dfdd12818940]
+padding=4
+tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
+
 [Tiling][154b674c-671a-4413-9b28-5d6063e0b29d][ce292a9e-b4f5-46ef-a65b-ce7e96726629]
 padding=4
 tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
@@ -43,6 +47,10 @@ padding=4
 tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
 
 [Tiling][cd79318b-677e-4e6d-96ac-55e7f945558d][9a0211fe-8acb-4d41-ab39-78583302c2a0]
+padding=4
+tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
+
+[Tiling][cd79318b-677e-4e6d-96ac-55e7f945558d][b22912c8-e877-411d-bcd7-dfdd12818940]
 padding=4
 tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
 
@@ -62,6 +70,10 @@ tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"wi
 padding=4
 tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
 
+[Tiling][ceaacb1c-ca2f-4abf-b8f3-3b3157b5909b][b22912c8-e877-411d-bcd7-dfdd12818940]
+padding=4
+tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
+
 [Tiling][ceaacb1c-ca2f-4abf-b8f3-3b3157b5909b][ce292a9e-b4f5-46ef-a65b-ce7e96726629]
 padding=4
 tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
@@ -75,6 +87,10 @@ padding=4
 tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
 
 [Tiling][dcf955f5-5530-4b33-8226-6b98e02b9521][9a0211fe-8acb-4d41-ab39-78583302c2a0]
+padding=4
+tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
+
+[Tiling][dcf955f5-5530-4b33-8226-6b98e02b9521][b22912c8-e877-411d-bcd7-dfdd12818940]
 padding=4
 tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
 
@@ -94,6 +110,10 @@ tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"wi
 padding=4
 tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
 
+[Tiling][dd5b4f94-ed66-4ebf-bee6-1c429436f3e5][b22912c8-e877-411d-bcd7-dfdd12818940]
+padding=4
+tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
+
 [Tiling][dd5b4f94-ed66-4ebf-bee6-1c429436f3e5][ce292a9e-b4f5-46ef-a65b-ce7e96726629]
 padding=4
 tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
@@ -107,7 +127,7 @@ InputMethod[$e]=/usr/share/applications/org.fcitx.Fcitx5.desktop
 VirtualKeyboardEnabled=true
 
 [Xwayland]
-Scale=1
+Scale=1.25
 
 [org.kde.kdecoration2]
 ButtonsOnLeft=
