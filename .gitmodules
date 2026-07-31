@@ -30,3 +30,6 @@
 [submodule "MacTahoe-icon-theme"]
 	path = MacTahoe-icon-theme
 	url = https://github.com/vinceliuice/MacTahoe-icon-theme.git
+[submodule "MacTahoe-kde"]
+	path = MacTahoe-kde
+	url = https://github.com/vinceliuice/MacTahoe-kde.git
