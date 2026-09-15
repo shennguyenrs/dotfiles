@@ -14,9 +14,9 @@ return {
       on_attach = function(bufnr)
         vim.keymap.set(
           "n",
-          "<space>gp",
-          require("gitsigns").preview_hunk_inline,
-          { buffer = bufnr, desc = "Preview Hunk Inline" }
+          "<space>gs",
+          ":Gitsigns <CR>",
+          { buffer = bufnr, desc = "GitSigns menu" }
         )
       end,
     })

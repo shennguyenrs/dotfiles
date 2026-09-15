@@ -1,3 +1,5 @@
+vim.loader.enable()
+
 -- Initilize lazy.nvim
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not vim.loop.fs_stat(lazypath) then
@@ -17,4 +19,22 @@ require("base")
 require("maps")
 
 -- Initilize plugins
-require("lazy").setup("plugins")
+require("lazy").setup("plugins", {
+  performance = {
+    cache = { enabled = true },
+    reset_packpath = true,
+    rtp = {
+      reset = true,
+      disabled_plugins = {
+        "gzip",
+        "matchit",
+        "matchparen",
+        "netrwPlugin",
+        "tarPlugin",
+        "tohtml",
+        "tutor",
+        "zipPlugin",
+      },
+    },
+  },
+})

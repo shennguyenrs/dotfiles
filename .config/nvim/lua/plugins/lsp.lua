@@ -1,5 +1,6 @@
 return {
 	"neovim/nvim-lspconfig",
+	event = { "BufReadPre", "BufNewFile" },
 	dependencies = {
 		{
 			"ray-x/lsp_signature.nvim",

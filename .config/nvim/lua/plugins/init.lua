@@ -14,7 +14,7 @@ return {
   },
   { "szw/vim-maximizer",     event = "VeryLazy" },
   { "numToStr/Comment.nvim", event = "VeryLazy", opts = {} },
-  { "folke/trouble.nvim",    event = "VeryLazy" },
+  -- { "folke/trouble.nvim",    event = "VeryLazy" },
   {
     "folke/todo-comments.nvim",
     dependencies = { "nvim-lua/plenary.nvim" },
