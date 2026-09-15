@@ -7,6 +7,7 @@ git submodule update
 # Directories to installed on machine
 config=(.config)
 gemini=(.gemini)
+agents=(.agents)
 global=(git tmux jetbrains)
 
 # Run Stow command with location and directories
@@ -19,18 +20,22 @@ stowit() {
 	stow -vRt ${loc} ${dir}
 }
 
-echo ""
 echo "--> Stowing .config directories"
 
 for dir in ${config[@]}; do
 	stowit $HOME/.config $dir
 done
 
-echo ""
 echo "--> Stowing .gemini directories"
 
 for dir in ${gemini[@]}; do
 	stowit $HOME/.gemini $dir
+done
+
+echo "--> Stowing .agents directories"
+
+for dir in ${agents[@]}; do
+	stowit $HOME/.agents $dir
 done
 
 echo "---> Stowing global config"
