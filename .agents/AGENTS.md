@@ -1,3 +1,12 @@
+# Global agent behavior
+
+Always apply the `caveman` and `ponytail` skills at session start.
+
+1. Read and follow `/home/shen/.agents/skills/caveman/SKILL.md` for all responses.
+2. Read and follow `/home/shen/.agents/skills/ponytail/SKILL.md` for all coding tasks.
+
+Persist both modes for the whole session until the user says "stop caveman" / "stop ponytail".
+
 ## Coding conventions
 
 ### Do not
