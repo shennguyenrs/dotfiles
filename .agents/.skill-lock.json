@@ -6,18 +6,18 @@
       "sourceType": "github",
       "sourceUrl": "https://github.com/JuliusBrussee/caveman.git",
       "skillPath": "skills/cavecrew/SKILL.md",
-      "skillFolderHash": "58b9a0bdb00d97953bfc840cb4dc3b38faf03759",
+      "skillFolderHash": "94c53a8c99ee75ca94245b60c6a4e97f79c02987",
       "installedAt": "2026-09-11T08:05:23.103Z",
-      "updatedAt": "2026-09-11T08:05:23.103Z"
+      "updatedAt": "2026-10-13T07:01:06.551Z"
     },
     "caveman": {
       "source": "JuliusBrussee/caveman",
       "sourceType": "github",
       "sourceUrl": "https://github.com/JuliusBrussee/caveman.git",
       "skillPath": "skills/caveman/SKILL.md",
-      "skillFolderHash": "efae5ae14e1ace5f456e895abb9e5643925a754c",
+      "skillFolderHash": "b314dd99b2b8723aae2de5a22079914567f2e58f",
       "installedAt": "2026-09-11T08:05:23.103Z",
-      "updatedAt": "2026-09-11T08:05:23.103Z"
+      "updatedAt": "2026-10-13T07:01:08.330Z"
     },
     "caveman-commit": {
       "source": "JuliusBrussee/caveman",
@@ -33,9 +33,9 @@
       "sourceType": "github",
       "sourceUrl": "https://github.com/JuliusBrussee/caveman.git",
       "skillPath": "skills/caveman-compress/SKILL.md",
-      "skillFolderHash": "e95dd5911da8896a142d1bf28e3b573c37e5deed",
+      "skillFolderHash": "8bfde0c338b80b7a30c6b267ccdeb6fe9dc96a35",
       "installedAt": "2026-09-11T08:05:23.104Z",
-      "updatedAt": "2026-09-11T08:05:23.104Z"
+      "updatedAt": "2026-10-13T07:01:11.383Z"
     },
     "caveman-discover": {
       "source": "JuliusBrussee/caveman",
@@ -60,27 +60,27 @@
       "sourceType": "github",
       "sourceUrl": "https://github.com/JuliusBrussee/caveman.git",
       "skillPath": "skills/caveman-explore/SKILL.md",
-      "skillFolderHash": "f26926e617ca8108e7ab77a9f6e100c228888ffe",
+      "skillFolderHash": "21ae2775d5f2a0a2d6cc89797d75b94c350b8353",
       "installedAt": "2026-09-11T08:05:23.104Z",
-      "updatedAt": "2026-09-11T08:05:23.104Z"
+      "updatedAt": "2026-10-13T07:01:14.455Z"
     },
     "caveman-help": {
       "source": "JuliusBrussee/caveman",
       "sourceType": "github",
       "sourceUrl": "https://github.com/JuliusBrussee/caveman.git",
       "skillPath": "skills/caveman-help/SKILL.md",
-      "skillFolderHash": "6c85e34cfd4166be893224b7f39c6379d38c8b0c",
+      "skillFolderHash": "f017cd6f707954e2a351d78389432a8322281224",
       "installedAt": "2026-09-11T08:05:23.104Z",
-      "updatedAt": "2026-09-11T08:05:23.104Z"
+      "updatedAt": "2026-10-13T07:01:16.778Z"
     },
     "caveman-learn": {
       "source": "JuliusBrussee/caveman",
       "sourceType": "github",
       "sourceUrl": "https://github.com/JuliusBrussee/caveman.git",
       "skillPath": "skills/caveman-learn/SKILL.md",
-      "skillFolderHash": "908fae7ced871b3505fecc7c7d294d5f9dd39ca8",
+      "skillFolderHash": "60584e4ff4e7602b76140eb650b2073efc748954",
       "installedAt": "2026-09-11T08:05:23.105Z",
-      "updatedAt": "2026-09-11T08:05:23.105Z"
+      "updatedAt": "2026-10-13T07:01:20.241Z"
     },
     "caveman-manage": {
       "source": "JuliusBrussee/caveman",
@@ -123,9 +123,9 @@
       "sourceType": "github",
       "sourceUrl": "https://github.com/JuliusBrussee/caveman.git",
       "skillPath": "skills/caveman-stats/SKILL.md",
-      "skillFolderHash": "c0fb6ec46cd22173f570edfdd20463d0f7aea67c",
+      "skillFolderHash": "c7b80bfb2ad324f99f87e0f16a81aca38c5d7257",
       "installedAt": "2026-09-11T08:05:23.106Z",
-      "updatedAt": "2026-09-11T08:05:23.106Z"
+      "updatedAt": "2026-10-13T07:01:22.506Z"
     },
     "investigate-first": {
       "source": "JuliusBrussee/caveman",
@@ -186,63 +186,153 @@
       "sourceType": "github",
       "sourceUrl": "https://github.com/dietrichgebert/ponytail.git",
       "skillPath": "skills/ponytail/SKILL.md",
-      "skillFolderHash": "cb6e53477eaf04e6daeca22feacb85f9ce20d40c",
+      "skillFolderHash": "db8acd3ce9e04ef4a5d42bbd90924b6d0a488318",
       "installedAt": "2026-09-11T08:06:31.910Z",
-      "updatedAt": "2026-09-22T09:17:21.976Z"
+      "updatedAt": "2026-10-13T07:01:25.258Z"
     },
     "ponytail-audit": {
       "source": "dietrichgebert/ponytail",
       "sourceType": "github",
       "sourceUrl": "https://github.com/dietrichgebert/ponytail.git",
       "skillPath": "skills/ponytail-audit/SKILL.md",
-      "skillFolderHash": "19744a9490abb0f5d0f18c6e39e3a3eb50f4daa1",
+      "skillFolderHash": "0c1468092a2b011b7acd369becea098f0c17f1c0",
       "installedAt": "2026-09-11T08:06:31.911Z",
-      "updatedAt": "2026-09-22T09:17:21.977Z"
+      "updatedAt": "2026-10-13T07:01:27.508Z"
     },
     "ponytail-debt": {
       "source": "dietrichgebert/ponytail",
       "sourceType": "github",
       "sourceUrl": "https://github.com/dietrichgebert/ponytail.git",
       "skillPath": "skills/ponytail-debt/SKILL.md",
-      "skillFolderHash": "fe9ea82cad2b42a9c244acc275c9091c414ff528",
+      "skillFolderHash": "deefc4f8538312cf548a93ca0ff8c9d884fef22b",
       "installedAt": "2026-09-11T08:06:31.912Z",
-      "updatedAt": "2026-09-22T09:17:21.978Z"
+      "updatedAt": "2026-10-13T07:01:30.875Z"
     },
     "ponytail-gain": {
       "source": "dietrichgebert/ponytail",
       "sourceType": "github",
       "sourceUrl": "https://github.com/dietrichgebert/ponytail.git",
       "skillPath": "skills/ponytail-gain/SKILL.md",
-      "skillFolderHash": "13724e1903f76456164f00ec2a3074848433588f",
+      "skillFolderHash": "3725b1222980f5643c52e19b96fa04a92b179152",
       "installedAt": "2026-09-11T08:06:31.912Z",
-      "updatedAt": "2026-09-22T09:17:21.978Z"
+      "updatedAt": "2026-10-13T07:01:33.062Z"
     },
     "ponytail-help": {
       "source": "dietrichgebert/ponytail",
       "sourceType": "github",
       "sourceUrl": "https://github.com/dietrichgebert/ponytail.git",
       "skillPath": "skills/ponytail-help/SKILL.md",
-      "skillFolderHash": "b7df7bc32b6e4e8bbde8acb2ef3c97ee7e7638f7",
+      "skillFolderHash": "87f25f262420cf82267b3170d75d4b295ab2d986",
       "installedAt": "2026-09-11T08:06:31.912Z",
-      "updatedAt": "2026-09-22T09:17:21.979Z"
+      "updatedAt": "2026-10-13T07:01:35.372Z"
     },
     "ponytail-review": {
       "source": "dietrichgebert/ponytail",
       "sourceType": "github",
       "sourceUrl": "https://github.com/dietrichgebert/ponytail.git",
       "skillPath": "skills/ponytail-review/SKILL.md",
-      "skillFolderHash": "dc6d9660c4297496a9220de377f6f7df38ab1a53",
+      "skillFolderHash": "8ad8430c42a6f8cd18758dddb70cfee399725de6",
       "installedAt": "2026-09-11T08:06:31.913Z",
-      "updatedAt": "2026-09-22T09:17:21.979Z"
+      "updatedAt": "2026-10-13T07:01:37.633Z"
     },
     "orchestration": {
       "source": "stablyai/orca",
       "sourceType": "github",
       "sourceUrl": "https://github.com/stablyai/orca.git",
       "skillPath": "skills/orchestration/SKILL.md",
-      "skillFolderHash": "23bc2ff6bb9f6e7d17f41734709ac951dbe3ee80",
+      "skillFolderHash": "b0cd1d58b0c317cf7c3726fef7e6b1197c405246",
       "installedAt": "2026-09-18T08:11:59.271Z",
-      "updatedAt": "2026-09-18T08:11:59.271Z"
+      "updatedAt": "2026-10-13T07:01:48.406Z"
+    },
+    "orca-cli": {
+      "source": "stablyai/orca",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/stablyai/orca.git",
+      "skillPath": "skills/orca-cli/SKILL.md",
+      "skillFolderHash": "572f7952ac451a30a9c2451b472a639b125ee584",
+      "installedAt": "2026-09-25T07:56:30.521Z",
+      "updatedAt": "2026-09-25T07:56:30.521Z"
+    },
+    "herdr": {
+      "source": "herdrdev/herdr",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/herdrdev/herdr.git",
+      "skillPath": "skills/herdr/SKILL.md",
+      "skillFolderHash": "67042ed7910d4177a9000e0679e78b0346060927",
+      "installedAt": "2026-09-25T07:56:53.315Z",
+      "updatedAt": "2026-10-13T07:01:51.767Z"
+    },
+    "handoff": {
+      "source": "mattpocock/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/mattpocock/skills.git",
+      "skillPath": "skills/productivity/handoff/SKILL.md",
+      "skillFolderHash": "ce24892bd2d4b9e7fd5ac9b95c03175e18bef388",
+      "installedAt": "2026-09-25T09:28:52.059Z",
+      "updatedAt": "2026-10-13T07:01:53.063Z"
+    },
+    "bencium-controlled-ux-designer": {
+      "source": "bencium/bencium-marketplace",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/bencium/bencium-marketplace.git",
+      "skillPath": "bencium-controlled-ux-designer/skills/bencium-controlled-ux-designer/SKILL.md",
+      "skillFolderHash": "453278fcdebfb23c9bc6b94d6c2eeb1a6fc5b40b",
+      "installedAt": "2026-10-06T11:20:16.854Z",
+      "updatedAt": "2026-10-06T11:20:16.854Z"
+    },
+    "bencium-impact-designer": {
+      "source": "bencium/bencium-marketplace",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/bencium/bencium-marketplace.git",
+      "skillPath": "bencium-impact-designer/skills/bencium-impact-designer/SKILL.md",
+      "skillFolderHash": "41720ff4541d37a189a377e3fe3754fca272ade0",
+      "installedAt": "2026-10-06T11:20:16.855Z",
+      "updatedAt": "2026-10-06T11:20:16.855Z"
+    },
+    "bencium-innovative-ux-designer": {
+      "source": "bencium/bencium-marketplace",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/bencium/bencium-marketplace.git",
+      "skillPath": "bencium-innovative-ux-designer/skills/bencium-innovative-ux-designer/SKILL.md",
+      "skillFolderHash": "fe736470b7f5c9b6029281494c8a73d94a4ab07f",
+      "installedAt": "2026-10-06T11:20:16.855Z",
+      "updatedAt": "2026-10-06T11:20:16.855Z"
+    },
+    "ui-typography": {
+      "source": "bencium/bencium-marketplace",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/bencium/bencium-marketplace.git",
+      "skillPath": "typography/skills/typography/SKILL.md",
+      "skillFolderHash": "b727dc2216f98266f415a71ddf55dcae32a04aee",
+      "installedAt": "2026-10-06T11:20:16.855Z",
+      "updatedAt": "2026-10-06T11:20:16.855Z"
+    },
+    "renaissance-architecture": {
+      "source": "bencium/bencium-marketplace",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/bencium/bencium-marketplace.git",
+      "skillPath": "renaissance-architecture/skills/renaissance-architecture/SKILL.md",
+      "skillFolderHash": "1af259aa1f3e47aac87920588d8dc04b83e3f60d",
+      "installedAt": "2026-10-06T11:20:16.856Z",
+      "updatedAt": "2026-10-06T11:20:16.856Z"
+    },
+    "vanity-engineering-review": {
+      "source": "bencium/bencium-marketplace",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/bencium/bencium-marketplace.git",
+      "skillPath": "vanity-engineering-review/skills/vanity-engineering-review/SKILL.md",
+      "skillFolderHash": "2add8410ac8db8f36e2716caff5ae88cb88920e0",
+      "installedAt": "2026-10-06T11:20:16.856Z",
+      "updatedAt": "2026-10-06T11:20:16.856Z"
+    },
+    "human-architect-mindset": {
+      "source": "bencium/bencium-marketplace",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/bencium/bencium-marketplace.git",
+      "skillPath": "human-architect-mindset/skills/human-architect-mindset/SKILL.md",
+      "skillFolderHash": "67236140834c15bc5932b01b1f05eb7993cd1276",
+      "installedAt": "2026-10-06T11:20:16.857Z",
+      "updatedAt": "2026-10-06T11:20:16.857Z"
     }
   },
   "dismissed": {
