@@ -33,9 +33,9 @@
       "sourceType": "github",
       "sourceUrl": "https://github.com/JuliusBrussee/caveman.git",
       "skillPath": "skills/caveman-compress/SKILL.md",
-      "skillFolderHash": "8bfde0c338b80b7a30c6b267ccdeb6fe9dc96a35",
+      "skillFolderHash": "b345d6e5b735d8284311a3b41d7522cdf951ddb3",
       "installedAt": "2026-09-11T08:05:23.104Z",
-      "updatedAt": "2026-10-13T07:01:11.383Z"
+      "updatedAt": "2026-10-15T18:38:28.006Z"
     },
     "caveman-discover": {
       "source": "JuliusBrussee/caveman",
@@ -204,18 +204,18 @@
       "sourceType": "github",
       "sourceUrl": "https://github.com/dietrichgebert/ponytail.git",
       "skillPath": "skills/ponytail-debt/SKILL.md",
-      "skillFolderHash": "deefc4f8538312cf548a93ca0ff8c9d884fef22b",
+      "skillFolderHash": "16c3b7953629510afa8f061f0fefa61a104e3020",
       "installedAt": "2026-09-11T08:06:31.912Z",
-      "updatedAt": "2026-10-13T07:01:30.875Z"
+      "updatedAt": "2026-10-15T18:38:30.228Z"
     },
     "ponytail-gain": {
       "source": "dietrichgebert/ponytail",
       "sourceType": "github",
       "sourceUrl": "https://github.com/dietrichgebert/ponytail.git",
       "skillPath": "skills/ponytail-gain/SKILL.md",
-      "skillFolderHash": "3725b1222980f5643c52e19b96fa04a92b179152",
+      "skillFolderHash": "c41e9e90173ddc6844c0bc44a89ba739534e06b0",
       "installedAt": "2026-09-11T08:06:31.912Z",
-      "updatedAt": "2026-10-13T07:01:33.062Z"
+      "updatedAt": "2026-10-15T18:38:31.956Z"
     },
     "ponytail-help": {
       "source": "dietrichgebert/ponytail",
@@ -258,9 +258,9 @@
       "sourceType": "github",
       "sourceUrl": "https://github.com/herdrdev/herdr.git",
       "skillPath": "skills/herdr/SKILL.md",
-      "skillFolderHash": "67042ed7910d4177a9000e0679e78b0346060927",
+      "skillFolderHash": "2be0d86d481d1bb29c62e11ef37b78d27d01b478",
       "installedAt": "2026-09-25T07:56:53.315Z",
-      "updatedAt": "2026-10-13T07:01:51.767Z"
+      "updatedAt": "2026-10-15T18:38:34.558Z"
     },
     "handoff": {
       "source": "mattpocock/skills",
