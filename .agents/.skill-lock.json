@@ -11,13 +11,13 @@
       "updatedAt": "2026-10-13T07:01:06.551Z"
     },
     "caveman": {
-      "source": "JuliusBrussee/caveman",
+      "source": "juliusbrussee/caveman",
       "sourceType": "github",
-      "sourceUrl": "https://github.com/JuliusBrussee/caveman.git",
+      "sourceUrl": "https://github.com/juliusbrussee/caveman.git",
       "skillPath": "skills/caveman/SKILL.md",
       "skillFolderHash": "b314dd99b2b8723aae2de5a22079914567f2e58f",
       "installedAt": "2026-09-11T08:05:23.103Z",
-      "updatedAt": "2026-10-13T07:01:08.330Z"
+      "updatedAt": "2026-10-20T12:57:31.850Z"
     },
     "caveman-commit": {
       "source": "JuliusBrussee/caveman",
@@ -33,9 +33,9 @@
       "sourceType": "github",
       "sourceUrl": "https://github.com/JuliusBrussee/caveman.git",
       "skillPath": "skills/caveman-compress/SKILL.md",
-      "skillFolderHash": "b345d6e5b735d8284311a3b41d7522cdf951ddb3",
+      "skillFolderHash": "dc37fdb3577867cb7086b79b505f12a9cbd60144",
       "installedAt": "2026-09-11T08:05:23.104Z",
-      "updatedAt": "2026-10-15T18:38:28.006Z"
+      "updatedAt": "2026-10-19T13:12:59.788Z"
     },
     "caveman-discover": {
       "source": "JuliusBrussee/caveman",
@@ -78,9 +78,9 @@
       "sourceType": "github",
       "sourceUrl": "https://github.com/JuliusBrussee/caveman.git",
       "skillPath": "skills/caveman-learn/SKILL.md",
-      "skillFolderHash": "60584e4ff4e7602b76140eb650b2073efc748954",
+      "skillFolderHash": "5603fb348d1eb6c28bd24f07aa51d3a432923e1f",
       "installedAt": "2026-09-11T08:05:23.105Z",
-      "updatedAt": "2026-10-13T07:01:20.241Z"
+      "updatedAt": "2026-10-19T13:13:07.440Z"
     },
     "caveman-manage": {
       "source": "JuliusBrussee/caveman",
@@ -186,9 +186,9 @@
       "sourceType": "github",
       "sourceUrl": "https://github.com/dietrichgebert/ponytail.git",
       "skillPath": "skills/ponytail/SKILL.md",
-      "skillFolderHash": "db8acd3ce9e04ef4a5d42bbd90924b6d0a488318",
+      "skillFolderHash": "e8d3fa76e7ff9223a784dbd4bcfc9ff46b3fa55d",
       "installedAt": "2026-09-11T08:06:31.910Z",
-      "updatedAt": "2026-10-13T07:01:25.258Z"
+      "updatedAt": "2026-10-19T13:13:09.945Z"
     },
     "ponytail-audit": {
       "source": "dietrichgebert/ponytail",
@@ -222,9 +222,9 @@
       "sourceType": "github",
       "sourceUrl": "https://github.com/dietrichgebert/ponytail.git",
       "skillPath": "skills/ponytail-help/SKILL.md",
-      "skillFolderHash": "87f25f262420cf82267b3170d75d4b295ab2d986",
+      "skillFolderHash": "f293d9e0ecff5da72cb4accf8a9e4717892cf0ad",
       "installedAt": "2026-09-11T08:06:31.912Z",
-      "updatedAt": "2026-10-13T07:01:35.372Z"
+      "updatedAt": "2026-10-19T13:13:12.507Z"
     },
     "ponytail-review": {
       "source": "dietrichgebert/ponytail",
@@ -333,6 +333,15 @@
       "skillFolderHash": "67236140834c15bc5932b01b1f05eb7993cd1276",
       "installedAt": "2026-10-06T11:20:16.857Z",
       "updatedAt": "2026-10-06T11:20:16.857Z"
+    },
+    "computer-use": {
+      "source": "stablyai/orca",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/stablyai/orca.git",
+      "skillPath": "skills/computer-use/SKILL.md",
+      "skillFolderHash": "b59f27370a41225c22127e91da0c91cd2519f217",
+      "installedAt": "2026-10-21T07:12:22.625Z",
+      "updatedAt": "2026-10-21T07:12:22.625Z"
     }
   },
   "dismissed": {
@@ -344,11 +353,13 @@
     "codex",
     "cursor",
     "droid",
+    "fx",
     "gemini-cli",
     "github-copilot",
     "kilo",
     "kimi-code-cli",
     "opencode",
+    "pi",
     "warp",
     "zed"
   ]
