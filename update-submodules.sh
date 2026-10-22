@@ -14,6 +14,20 @@ git pull origin master
 cd ..
 echo "Done"
 
+echo "---> Updating MacTahoe-icon-theme submodule..."
+cd ./MacTahoe-icon-theme/
+git fetch origin main
+git pull origin main
+cd ..
+echo "Done"
+
+echo "---> Updating MacTahoe-kde submodule..."
+cd ./MacTahoe-kde/
+git fetch origin main
+git pull origin main
+cd ..
+echo "Done"
+
 cd ./.config/zsh/zsh_plugins
 
 echo "Updating fast-syntax-highlighting..."

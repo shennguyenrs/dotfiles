@@ -1,5 +1,5 @@
 local function set_theme()
-  vim.cmd.colorscheme(vim.o.background == "light" and "rose-pine-dawn" or "rose-pine")
+  vim.cmd.colorscheme(vim.o.background == "light" and "onenord-light" or "rose-pine")
   vim.cmd [[
     hi Pmenusel gui=bold
     hi CursorLine gui=underline
