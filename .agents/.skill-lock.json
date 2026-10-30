@@ -17,7 +17,7 @@
       "skillPath": "skills/caveman/SKILL.md",
       "skillFolderHash": "b314dd99b2b8723aae2de5a22079914567f2e58f",
       "installedAt": "2026-09-11T08:05:23.103Z",
-      "updatedAt": "2026-10-20T12:57:31.850Z"
+      "updatedAt": "2026-10-23T07:27:54.615Z"
     },
     "caveman-commit": {
       "source": "JuliusBrussee/caveman",
@@ -27,15 +27,6 @@
       "skillFolderHash": "7b600195c1d3cdd277dc608c56384c86afb7ec11",
       "installedAt": "2026-09-11T08:05:23.104Z",
       "updatedAt": "2026-09-11T08:05:23.104Z"
-    },
-    "caveman-compress": {
-      "source": "JuliusBrussee/caveman",
-      "sourceType": "github",
-      "sourceUrl": "https://github.com/JuliusBrussee/caveman.git",
-      "skillPath": "skills/caveman-compress/SKILL.md",
-      "skillFolderHash": "dc37fdb3577867cb7086b79b505f12a9cbd60144",
-      "installedAt": "2026-09-11T08:05:23.104Z",
-      "updatedAt": "2026-10-19T13:12:59.788Z"
     },
     "caveman-discover": {
       "source": "JuliusBrussee/caveman",
@@ -235,24 +226,6 @@
       "installedAt": "2026-09-11T08:06:31.913Z",
       "updatedAt": "2026-10-13T07:01:37.633Z"
     },
-    "orchestration": {
-      "source": "stablyai/orca",
-      "sourceType": "github",
-      "sourceUrl": "https://github.com/stablyai/orca.git",
-      "skillPath": "skills/orchestration/SKILL.md",
-      "skillFolderHash": "b0cd1d58b0c317cf7c3726fef7e6b1197c405246",
-      "installedAt": "2026-09-18T08:11:59.271Z",
-      "updatedAt": "2026-10-13T07:01:48.406Z"
-    },
-    "orca-cli": {
-      "source": "stablyai/orca",
-      "sourceType": "github",
-      "sourceUrl": "https://github.com/stablyai/orca.git",
-      "skillPath": "skills/orca-cli/SKILL.md",
-      "skillFolderHash": "572f7952ac451a30a9c2451b472a639b125ee584",
-      "installedAt": "2026-09-25T07:56:30.521Z",
-      "updatedAt": "2026-09-25T07:56:30.521Z"
-    },
     "herdr": {
       "source": "herdrdev/herdr",
       "sourceType": "github",
@@ -333,15 +306,6 @@
       "skillFolderHash": "67236140834c15bc5932b01b1f05eb7993cd1276",
       "installedAt": "2026-10-06T11:20:16.857Z",
       "updatedAt": "2026-10-06T11:20:16.857Z"
-    },
-    "computer-use": {
-      "source": "stablyai/orca",
-      "sourceType": "github",
-      "sourceUrl": "https://github.com/stablyai/orca.git",
-      "skillPath": "skills/computer-use/SKILL.md",
-      "skillFolderHash": "b59f27370a41225c22127e91da0c91cd2519f217",
-      "installedAt": "2026-10-21T07:12:22.625Z",
-      "updatedAt": "2026-10-21T07:12:22.625Z"
     }
   },
   "dismissed": {

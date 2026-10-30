@@ -40,4 +40,5 @@ return {
     end,
     opts = {},
   },
+  { "ChmaraX/herdr-nvim", opts = {} }
 }

@@ -1,21 +1,50 @@
 {
-  "lastChangelogVersion": "0.85.1",
+  "defaultModel": "auto/minimax-m3.1-flash",
+  "defaultProvider": "magpie",
+  "lastChangelogVersion": "1.4.0",
   "theme": "dark",
   "packages": [
-    "npm:context-mode",
-    "npm:better-custom-provider",
-    "npm:@vndv/pi-codegraph",
-    "npm:pi-show-diffs",
-    "npm:pi-lens",
-    "npm:pi-web-access",
+    {
+      "source": "npm:pi-show-diffs",
+      "extensions": ["+index.ts"]
+    },
+    {
+      "source": "npm:pi-lens",
+      "extensions": ["+dist/index.js"]
+    },
+    {
+      "source": "npm:pi-web-access",
+      "extensions": ["+dist/index.js"]
+    },
+    {
+      "source": "npm:@juicesharp/rpiv-ask-user-question",
+      "extensions": ["+index.ts"]
+    },
+    {
+      "source": "npm:@juicesharp/rpiv-todo",
+      "extensions": ["+index.ts"]
+    },
+    {
+      "source": "npm:@juicesharp/rpiv-btw",
+      "extensions": ["+index.ts"]
+    },
+    {
+      "source": "npm:@ff-labs/pi-fff",
+      "extensions": ["+src/index.ts"]
+    },
+    {
+      "source": "npm:pi-footer",
+      "extensions": ["-src/index.ts"]
+    },
+    {
+      "source": "npm:@shennguyenrs/pi-emote",
+      "extensions": ["+src/index.ts"]
+    },
     "npm:pi-subagents",
-    "npm:@juicesharp/rpiv-ask-user-question",
-    "npm:pi-memory",
-    "npm:@juicesharp/rpiv-todo",
-    "npm:@juicesharp/rpiv-btw",
-    "npm:@ff-labs/pi-fff",
-    "npm:pi-blackhole",
-    "npm:pi-footer"
+    "npm:pi-declutter",
+    "npm:pi-cached-compaction",
+    "npm:betterwright",
+    "npm:@henryqw/pi-codegraph"
   ],
   "hideThinkingBlock": true
 }
