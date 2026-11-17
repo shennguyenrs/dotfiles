@@ -1,36 +1,10 @@
 {
-  "hooks": {
-    "PreToolUse": [
+  "herdr": {
+    "PreInvocation": [
       {
-        "matcher": "run_command|view_file|grep_search|web_fetch|read_url_content",
-        "hooks": [
-          {
-            "type": "command",
-            "command": "context-mode hook antigravity-cli pretooluse"
-          }
-        ]
-      }
-    ],
-    "PostToolUse": [
-      {
-        "matcher": "",
-        "hooks": [
-          {
-            "type": "command",
-            "command": "context-mode hook antigravity-cli posttooluse"
-          }
-        ]
-      }
-    ],
-    "Stop": [
-      {
-        "matcher": "",
-        "hooks": [
-          {
-            "type": "command",
-            "command": "context-mode hook antigravity-cli stop"
-          }
-        ]
+        "command": "bash '/home/shen/.gemini/config/hooks/herdr-agent-state.sh' session",
+        "timeout": 10,
+        "type": "command"
       }
     ]
   }

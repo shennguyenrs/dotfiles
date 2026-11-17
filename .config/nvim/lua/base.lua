@@ -30,3 +30,6 @@ vim.opt.wildoptions = 'pum'
 vim.opt.pumblend = 5
 
 vim.g.python3_host_prog = '/usr/bin/python3'
+
+-- Prepend Mason bin to PATH so language servers and tools are always found
+vim.env.PATH = vim.fn.stdpath("data") .. "/mason/bin:" .. vim.env.PATH

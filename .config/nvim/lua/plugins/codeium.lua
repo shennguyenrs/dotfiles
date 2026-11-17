@@ -1,5 +1,5 @@
 return {
-	"Exafunction/codeium.vim",
+	"shennguyenrs/windsurf.vim",
 	event = "BufEnter",
 	keys = {
 		{

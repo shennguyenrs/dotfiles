@@ -1,44 +1,62 @@
 {
-  "defaultModel": "auto/minimax-m3.1-flash",
+  "defaultModel": "google/models/gemini-4-hydrogen",
   "defaultProvider": "magpie",
-  "lastChangelogVersion": "1.4.0",
-  "theme": "dark",
+  "lastChangelogVersion": "1.5.2",
+  "theme": "light/dark",
   "packages": [
     {
       "source": "npm:pi-show-diffs",
-      "extensions": ["+index.ts"]
+      "extensions": [
+        "+index.ts"
+      ]
     },
     {
       "source": "npm:pi-lens",
-      "extensions": ["+dist/index.js"]
+      "extensions": [
+        "+dist/index.js"
+      ]
     },
     {
       "source": "npm:pi-web-access",
-      "extensions": ["+dist/index.js"]
+      "extensions": [
+        "+dist/index.js"
+      ]
     },
     {
       "source": "npm:@juicesharp/rpiv-ask-user-question",
-      "extensions": ["+index.ts"]
+      "extensions": [
+        "+index.ts"
+      ]
     },
     {
       "source": "npm:@juicesharp/rpiv-todo",
-      "extensions": ["+index.ts"]
+      "extensions": [
+        "+index.ts"
+      ]
     },
     {
       "source": "npm:@juicesharp/rpiv-btw",
-      "extensions": ["+index.ts"]
+      "extensions": [
+        "+index.ts"
+      ]
     },
     {
       "source": "npm:@ff-labs/pi-fff",
-      "extensions": ["+src/index.ts"]
+      "extensions": [
+        "+src/index.ts"
+      ]
     },
     {
       "source": "npm:pi-footer",
-      "extensions": ["-src/index.ts"]
+      "extensions": [
+        "-src/index.ts"
+      ]
     },
     {
       "source": "npm:@shennguyenrs/pi-emote",
-      "extensions": ["+src/index.ts"]
+      "extensions": [
+        "+src/index.ts"
+      ]
     },
     "npm:pi-subagents",
     "npm:pi-declutter",
@@ -46,5 +64,23 @@
     "npm:betterwright",
     "npm:@henryqw/pi-codegraph"
   ],
-  "hideThinkingBlock": true
+  "hideThinkingBlock": true,
+  "extensionChangelogVersions": {
+    "{\"source\":\"npm:pi-lens\",\"scope\":\"user\"}": "4.5.1",
+    "{\"source\":\"npm:pi-web-access\",\"scope\":\"user\"}": "0.48.0",
+    "{\"source\":\"npm:pi-subagents\",\"scope\":\"user\"}": "0.89.0",
+    "{\"source\":\"npm:pi-declutter\",\"scope\":\"user\"}": "0.2.2",
+    "{\"source\":\"npm:pi-cached-compaction\",\"scope\":\"user\"}": "0.2.0",
+    "{\"source\":\"npm:betterwright\",\"scope\":\"user\"}": "2.9.1"
+  },
+  "subagents": {
+    "agentOverrides": {
+      "worker": {
+        "model": "magpie/auto/minimax-m3.1-flash"
+      },
+      "scout": {
+        "model": "magpie/auto/minimax-m3.1-flash"
+      }
+    }
+  }
 }
